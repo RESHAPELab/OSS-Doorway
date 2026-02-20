@@ -136,9 +136,18 @@ DB_NAME="${this.dbName}"
     const updateQuery = { $set: userData };
 
     try {
+      console.log(`[DB][updateData] _id=${userData._id}`);
+      console.log(`[DB][updateData] storedValues (before):`, userData.user_data?.storedValues);
+    } catch (_) {}
+
+    try {
       await this.collection.updateOne(filterQuery, updateQuery, {
         upsert: true, // This will create a new user if not found
       });
+      try {
+        const updated = await this.collection.findOne({ _id: userData._id }, { projection: { "user_data.storedValues": 1 } });
+        console.log(`[DB][updateData] storedValues (after):`, updated?.user_data?.storedValues);
+      } catch (_) {}
     } catch (error) {
       console.error("Error updating user data:", error);
     }
@@ -187,6 +196,44 @@ DB_NAME="${this.dbName}"
     } catch (error) {
       console.error("Error checking if user exists:", error);
       return false;
+    }
+  }
+
+  async getAllUsers() {
+    try {
+      const users = await this.collection.find({}).toArray();
+      return users;
+    } catch (error) {
+      console.error("Error getting all users:", error);
+      return [];
+    }
+  }
+
+  async getUsersByClassId(baseClassId) {
+    try {
+      // Query with regex to match any customGroupId starting with baseClassId
+      // and only fetch the fields we need for class metrics
+      const users = await this.collection.find(
+        { 
+          'user_data.customGroupId': { $regex: `^${baseClassId}` },
+          '_id': { $not: { $regex: '-test', $options: 'i' } } // Exclude test repos in query
+        },
+        { 
+          projection: {
+            '_id': 1,
+            'user_data.github': 1,
+            'user_data.username': 1,
+            'user_data.points': 1,
+            'user_data.xp': 1,
+            'user_data.completed': 1,
+            'user_data.customGroupId': 1
+          }
+        }
+      ).toArray();
+      return users;
+    } catch (error) {
+      console.error("Error getting users by class ID:", error);
+      return [];
     }
   }
 

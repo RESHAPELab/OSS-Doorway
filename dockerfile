@@ -1,23 +1,41 @@
-# Use an official Node.js image
-FROM node:22
+# Use official Node.js image with Python support - explicit version to bypass cache
+FROM node:20.18.1-bullseye-slim
+
+# Build cache bust to ensure fresh build
+ARG CACHE_BUST=3
+
+# Debug: Show Node.js version
+RUN node --version && npm --version
+
+# Install Python and pip
+RUN apt-get update && apt-get install -y \
+  python3 \
+  python3-pip \
+  python3-venv \
+  && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory inside the container
-WORKDIR /app/OSS-doorway
+WORKDIR /app
 
-# Copy package.json to install dependencies
-COPY package.json ./
+# Create virtual environment for Python
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
 
-# Install dependencies
-RUN npm install
+# Copy package files first for better caching
+COPY package*.json ./
 
-# Now copy the entire app source code
-COPY . .  
+# Install Node.js dependencies with verbose logging
+RUN npm ci --production --verbose
+
+# Copy requirements and install Python dependencies
+COPY requirements.txt ./
+RUN pip3 install --upgrade pip && pip3 install -r requirements.txt
 
 # Copy the rest of the application files
 COPY . .
 
-# Expose the port if needed
-EXPOSE 3000
+# Expose the correct port for OSS-Doorway
+EXPOSE 4000
 
-# Ensure dependencies are installed before starting the application
-CMD ["sh", "-c", "npm install && npm run start"]
+# Start the application
+CMD ["npm", "start"]

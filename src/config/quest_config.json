@@ -1,107 +1,207 @@
 {
-  "map_repo_link":"https://github.com/caiton1/OSS-Doorway/tree/main/map",
+  "map_repo_link": "https://raw.githubusercontent.com/caiton1/OSS-Doorway/main/map",
   "Q0": {
     "metadata": {
       "title": "Configuring your environment",
-      "prerequisite": null
+      "prerequisite": null,
+      "type": "general"
     },
     "T1": {
       "desc": "Environment Preferences",
+      "points": 0,
+      "xp": 0,
+      "type": "general"
+    }
+  },
+  "Q4": {
+    "metadata": {
+      "prerequisite": "Q0",
+      "title": "Advanced GitHub Concepts 🧠",
+      "description": "Test your knowledge of advanced GitHub workflows and Git concepts.",
+      "type": "custom"
+    },
+    "T1": {
+      "desc": "Advanced GitHub Workflow MCQ",
+      "points": 15,
+      "xp": 15,
+      "type": "mcq",
+      "correctAnswer": "B"
+    }
+  },
+  "Q5": {
+    "metadata": {
+      "prerequisite": "Q4",
+      "title": "Repository Analytics 📊",
+      "description": "Learn to analyze repository statistics and understand project activity.",
+      "type": "general"
+    },
+    "T1": {
+      "desc": "Count Open Issues",
       "points": 20,
-      "xp": 20
+      "xp": 20,
+      "type": "general"
     }
   },
   "Q1": {
     "metadata": {
       "title": "Exploring the GitHub World",
-      "prerequisite": null
+      "prerequisite": "Q5",
+      "type": "general"
     },
     "T1": {
       "desc": "Explore the issue tracker",
       "points": 20,
-      "xp": 20
+      "xp": 20,
+      "type": "general"
     },
     "T2": {
       "desc": "Explore the pull-request menu",
       "points": 20,
-      "xp": 20
+      "xp": 20,
+      "type": "general"
     },
     "T3": {
       "desc": "Explore the fork button",
       "points": 20,
-      "xp": 20
+      "xp": 20,
+      "type": "general"
     },
     "T4": {
       "desc": "Explore the readme file",
       "points": 20,
-      "xp": 20
+      "xp": 20,
+      "type": "general"
     },
     "T5": {
       "desc": "Explore the contributors",
       "points": 20,
-      "xp": 20
+      "xp": 20,
+      "type": "general"
     },
     "T6": {
       "desc": "Quiz",
-      "points": 0,
-      "xp": 0
+      "points": 20,
+      "xp": 20,
+      "type": "quiz",
+      "questions": [
+        {
+          "question": "What is the primary purpose of the issue tracker in a GitHub repository?",
+          "optionA": "To list all contributors to the project",
+          "optionB": "To track bug reports, feature requests, and project discussions",
+          "optionC": "To store documentation and project guidelines",
+          "optionD": "To manage pull requests and merges",
+          "correctAnswer": "b",
+          "explanation": "The issue tracker is the central hub for project discussions, bug reports, and feature requests."
+        },
+        {
+          "question": "Which statement best describes a pull request on GitHub?",
+          "optionA": "A way to propose changes to a repository, allowing for code review and discussion before integration",
+          "optionB": "A method of archiving issues and marking them as resolved",
+          "optionC": "A feature used for backing up repository data to a different server",
+          "optionD": "A section where repository settings and configurations are modified",
+          "correctAnswer": "a",
+          "explanation": "Pull requests allow contributors to propose changes that can be reviewed before being merged."
+        },
+        {
+          "question": "Why would you fork a repository on GitHub?",
+          "optionA": "To permanently delete it from your account",
+          "optionB": "To merge two different repositories into one",
+          "optionC": "To create a personal copy where you can experiment and make changes without affecting the original",
+          "optionD": "To mark it as one of your favorite projects",
+          "correctAnswer": "c",
+          "explanation": "Forking creates a personal copy for experimentation without affecting the original project."
+        },
+        {
+          "question": "What information is typically found in a README file of a GitHub project?",
+          "optionA": "The project's history and commit logs",
+          "optionB": "A guide on how to contribute, along with an overview of the project",
+          "optionC": "Personal information about the contributors",
+          "optionD": "All the issues that have ever been reported",
+          "correctAnswer": "b",
+          "explanation": "README files provide project overview and contribution guidelines for new contributors."
+        },
+        {
+          "question": "How can understanding who has contributed the most to a project be useful?",
+          "optionA": "It ensures that you get paid for your contributions",
+          "optionB": "It prevents other people from making changes to your code",
+          "optionC": "It lets you change the project's license to your preference",
+          "optionD": "It helps identify the project's most active users and potential people to reach out to for guidance",
+          "correctAnswer": "d",
+          "explanation": "Knowing top contributors helps identify who to ask for help or guidance on the project."
+        }
+      ],
+      "accept": "### 🧠 Quest 1 Quiz\n\nAnswer the following questions to test your knowledge of the GitHub contribution process.\n\n**Question 1:** What is the primary purpose of the issue tracker in a GitHub repository?\n\nA) To list all contributors to the project\nB) To track bug reports, feature requests, and project discussions\nC) To store documentation and project guidelines\nD) To manage pull requests and merges\n\n**Question 2:** Which statement best describes a pull request on GitHub?\n\nA) A way to propose changes to a repository, allowing for code review and discussion before integration\nB) A method of archiving issues and marking them as resolved\nC) A feature used for backing up repository data to a different server\nD) A section where repository settings and configurations are modified\n\n**Question 3:** Why would you fork a repository on GitHub?\n\nA) To permanently delete it from your account\nB) To merge two different repositories into one\nC) To create a personal copy where you can experiment and make changes without affecting the original\nD) To mark it as one of your favorite projects\n\n**Question 4:** What information is typically found in a README file of a GitHub project?\n\nA) The project's history and commit logs\nB) A guide on how to contribute, along with an overview of the project\nC) Personal information about the contributors\nD) All the issues that have ever been reported\n\n**Question 5:** How can understanding who has contributed the most to a project be useful?\n\nA) It ensures that you get paid for your contributions\nB) It prevents other people from making changes to your code\nC) It lets you change the project's license to your preference\nD) It helps identify the project's most active users and potential people to reach out to for guidance\n\n**Important:** Please provide answers in the format [x,x,x,x,x] where each letter corresponds to your answer for each question.\n\n**Example:** If you think the answers are A, C, B, D, E, type: [a,c,b,d,e]\n\n**Note:** There is only one attempt allowed!",
+      "success": "### 🌟 Congratulations! You've Got It Right!\n\nYou've successfully answered the quiz questions, demonstrating your understanding of GitHub fundamentals and open source collaboration.\n\nAs a reward for your knowledge and learning, you've earned **${experiencePoints} experience points!**\n\n> 🌟 🌟 🌟\n\n🏆 **Current Progress:** You now have **${currentPoints} points**, edging closer to the next level.\n\n🎯 **Quest Completion:** You've successfully completed this quest! Every task you accomplish brings you closer to mastering the GitHub realm.\n\n> 🌟 🌟 🌟\n\nFantastic work! You're building a solid foundation for open source contribution.\n\nReady for the next challenge? More adventures await! 🌟",
+      "error": "### 🚨 Oops, That's Not Quite Right!\n\nIt looks like your answers don't match the correct responses. Don't worry - mistakes are part of the learning journey!\n\n**Please check:**\n- You have an answer for each question\n- You're following the answer pattern: [x,x,x,x,x]\n- Each answer is a single letter (a, b, c, or d)\n\n**Example format:** [a,c,b,d,e]\n\nIf you need help, don't forget that you can type \"help\" to get hints.\n\nReady to try again? The correct answers are waiting for you! 🎯",
+      "hints": []
     }
   },
   "Q2": {
     "metadata": {
       "title": "Introducing yourself to the community",
-      "prerequisite": "Q1"
+      "prerequisite": "Q1",
+      "type": "general"
     },
     "T1": {
-      "desc": "Choose an issue that you would like to work with",
+      "desc": "Identify the assigned user for the issue",
       "points": 25,
-      "xp": 25
+      "xp": 25,
+      "type": "general"
     },
     "T2": {
-      "desc": "Assign your user to work on the issue",
+      "desc": "Choose an issue that you would like to work with",
       "points": 25,
-      "xp": 25
+      "xp": 25,
+      "type": "general"
     },
     "T3": {
       "desc": "Post a comment in the issue introducing yourself",
       "points": 25,
-      "xp": 25
+      "xp": 25,
+      "type": "general"
     },
     "T4": {
-      "desc": "Mention a contributor that has most recently been active in the project to help you to solve the issue",
+      "desc": "Mention a top contributor to help you to solve the issue",
       "points": 25,
-      "xp": 25
+      "xp": 25,
+      "type": "general"
     },
     "T5": {
       "desc": "Quiz",
       "points": 0,
-      "xp": 0
+      "xp": 0,
+      "type": "general"
     }
   },
   "Q3": {
     "metadata": {
       "title": "Making your first contribution",
-      "prerequisite": "Q2"
+      "prerequisite": "Q2",
+      "type": "general"
     },
     "T1": {
       "desc": "Solve the issue (upload a file/make commit)",
       "points": 50,
-      "xp": 50
+      "xp": 50,
+      "type": "general"
     },
     "T2": {
-      "desc": "Post in issue asking for a review",
+      "desc": "Post in the pull request asking for a review",
       "points": 25,
-      "xp": 25
+      "xp": 25,
+      "type": "general"
     },
     "T3": {
       "desc": "Close the issue",
       "points": 25,
-      "xp": 25
+      "xp": 25,
+      "type": "general"
     },
     "T4": {
       "desc": "Quiz",
       "points": 0,
-      "xp": 0
+      "xp": 0,
+      "type": "general"
     }
   }
 }

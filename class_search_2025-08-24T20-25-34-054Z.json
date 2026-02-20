@@ -1,0 +1,2369 @@
+{
+  "timestamp": "2025-08-24T20:25:34.053Z",
+  "totalUsers": 225,
+  "totalClasses": 202,
+  "classesWithCollectedInfo": [
+    {
+      "classId": "repo_dcdacadcda_friend_1756066687972_ucfn2lmu5",
+      "userCount": 1,
+      "collectedInfoData": [
+        {
+          "userId": "dcdacadcda-friend",
+          "github": "dcdacadcda",
+          "key": "collected_info",
+          "value": "my name is misan"
+        }
+      ]
+    }
+  ],
+  "similarClasses": [],
+  "allClasses": [
+    {
+      "classId": "group_9876543210_def456",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "testuser_group_9876543210_def456",
+          "github": "testuser",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_5555555555_new123",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "testuser_group_5555555555_new123",
+          "github": "testuser",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1752303800652_qdtyyrqiy",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie_custom-OSS-Doorway-Dev-MisanEtchie-egr1-custom-oss-doorway",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1752734706247_153deyzqv",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-test-oss-doorway",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1752699141204_k44v02cmq",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-custom_sequence-oss-doorway",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1752826892723_qp7h61jjz",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanatnau-test-oss-doorway",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1752769424193_dhqfivsbm",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanatnau-custom_sequence-oss-doorway",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1752904454833_ocbow9nq4",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanatnau-custom-oss-doorway",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1752906650006_0bh007pz5",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanatnau-oss-intro-2",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753116205623_lui45wex4",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-oss-intro-2",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753031074451_y5cv6o7za",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-oss-intro-2",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753114098137_malnphvja",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-reshape1-oss-doorway",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753114973539_50ysxb5sk",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-oss1-oss-doorway",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753116516505_kbplfccq6",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "igorsteinmacher-reshape1-oss-doorway",
+          "github": "igorsteinmacher",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753116535744_8hnj86328",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "marcogerosa-reshape1-oss-doorway",
+          "github": "marcogerosa",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753116647702_0atke9tzc",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanATnau-reshape1-oss-doorway",
+          "github": "MisanATnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753152778130_f1sc811yz",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanATnau-reshape2-oss-doorway",
+          "github": "MisanATnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753167792121_bp131rapo",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-custom-quest-1753167791156",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753198734508_tqwzmbobz",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-custom-quest-1753198733431",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753199242206_us2cxqzoa",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "testuser789-test-restart",
+          "github": "testuser789",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753199303862_6gnukgkjp",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "testreadme-readme-test",
+          "github": "testreadme",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753199558516_opdtychpj",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-custom-quest-1753199558001",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753199769073_4taeieo7v",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-custom-quest-1753199768448",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753201617587_blpcflyy0",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-custom-quest-1753201617117",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753213983733_ft0c8s02j",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-custom-quest-1753213983277",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753215061314_0wkkj44ps",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "Misanatnau-custom-quest-1753215060680",
+          "github": "Misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753215460197_c8hpgsj2s",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-custom-quest-1753215459735",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753216892771_aqr0vb6oq",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-custom-quest-1753216892300",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753251648552_hcmqqokll",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-test-102",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753250617202_3u3u4jio8",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-test-102",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753290451068_shaf29u7s",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-timeless",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753285389936_wioih7r8x",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-timeless",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753323899763_9rrsghk47",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-jul23",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753303139910_0sxzoc2iz",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-jul23",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753380242924_4je9a7tht",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-mars",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753379969465_pvrp8nkmt",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-mars",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753380439353_ihe99gaw4",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-anna-wintour",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753380444308_zlcwgudvf",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-anna-wintour",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753380815075_pq8a2r125",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-psquare",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753380819773_4d8gwkoky",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-psquare",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753393969374_v6ywrnkgl",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-shikshakshok",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753414141731_8t6av80eb",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-shikshakshok",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753764960782_zwtvsswk1",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-alibi",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753764965886_nde1hiua5",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-alibi",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753382376098_dkonicfq4",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-trouble",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753382381081_tnor3tcrg",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-trouble",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753463432092_ugedboo45",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-alibi-q1",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753463437201_s4yp3n2sp",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-alibi-q1",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753468103827_393tjkbsy",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanatnau-alibi",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753468109122_5xivsqq3t",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetchie-alibi",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753474179201_dvkmxdb1b",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-lifetime",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753474183340_4km4npk2j",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-lifetime",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753764933697_k31nuitxz",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-journal",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753764938481_cq90fuan5",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-journal",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753764906523_ljvt876dc",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-thousands",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753764911679_uacbshayh",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-thousands",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753475209165_wln0n9p2o",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-covering",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753475213786_vogjti3z0",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-covering",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753486099181_yfz2ajvpp",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "igorsteinmacher-reshapeclass",
+          "github": "igorsteinmacher",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753486104699_g9a8oyjjd",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "marcogerosa-reshapeclass",
+          "github": "marcogerosa",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753486109828_zg9untrou",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "coupur-reshapeclass",
+          "github": "coupur",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753486114999_6iskxj5ap",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "mcauley-penney-reshapeclass",
+          "github": "mcauley-penney",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753486120220_3td3y2itc",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "pedrorodriguesarantes-reshapeclass",
+          "github": "pedrorodriguesarantes",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753486125382_sju30jpwd",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "nichmorgan-reshapeclass",
+          "github": "nichmorgan",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753765763388_54889p8sm",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-reshapeclass",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753766760789_x2ohflzd6",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-reshapeclass",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753767314924_xz8u34o8m",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-oklahoma",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753767320080_o8cpcufp7",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-oklahoma",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753768267388_5hc5wqca5",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-walmart",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753768272799_amginxha9",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-walmart",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753809772624_nqk0ob3dv",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-unhand",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753810825460_o4fwq4wpd",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-unhand",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753811119334_0vo8xht42",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-scotland",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753811124922_x3odzoqij",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-scotland",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753811397828_5sxe5bwe0",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-tragic",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753811403412_klup4qi4z",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-tragic",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753812774526_tzij7966g",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-computer",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753814941233_laowt4ngm",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-computer",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753977437769_lfoerri42",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-thrive",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753816014561_y6f16thh3",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-thrive",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753931770938_1q2u0sqqv",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanatnau-invite-1753931770175",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753931991443_jbbs3lx85",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-invite-1753931990761",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753932106496_oa6wuwhtb",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-invite-1753932105875",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753932146240_vzcq9iv9o",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanATnau-68891a69af36aed8584ca770",
+          "github": "MisanATnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753932535314_netdl7gda",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-class",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1753977600588_2s1r07fiy",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "Misanatnau-thrive",
+          "github": "Misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754020966432_ubgcn8q7t",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-bodymist",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754010713467_xxrxewrl7",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-bodymist",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754023497696_1e8xif3vu",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-cartoons",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754023501642_929jipqf4",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-cartoons",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754298193919_j4zfypkba",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-answer",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754112463892_5q92h63wf",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-posts",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754112468213_t05n0314z",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-posts",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754113494463_jb155zdl6",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-grant",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754113498414_5dvpthdoo",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-grant",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754116729961_tr1kym6jv",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-canadian",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754116734020_64gh9wsp4",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-canadian",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754298197911_q3s4e2le9",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-answer",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754316346992_ad899mi4v",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanatnau-answer",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754358140719_qsqoksvyd",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-github-400",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754346613532_gm4rw9v5t",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-github-400",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754326255068_jccpwynvt",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "marcogerosa-github-400",
+          "github": "marcogerosa",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754326275655_elwozflqg",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "igorsteinmacher-github-400",
+          "github": "igorsteinmacher",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754352012694_ryulx5b2h",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanatnau-github-400",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754371983547_26bbkc7n3",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-censor",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754417424108_hmfibytm8",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-censor",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754420443913_yf09mtofk",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanatnau-abeg-101",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754421971630_fizyfz1db",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetchie-abeg-101",
+          "github": "misanetchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754538637115_3u7cj56dd",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-abeg-101",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755545182443_frfacznmp",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-financing",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755683662805_r7f5b0ob3",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-financing",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754930719596_p4whllnvl",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "igorsteinmacher-financing",
+          "github": "igorsteinmacher",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754930737014_kqgl2wpb5",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "marcogerosa-financing",
+          "github": "marcogerosa",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1754930764040_b74cjf0vx",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetchie-financing",
+          "github": "misanetchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755380424049_ea7f3nt97",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetchie-bye",
+          "github": "misanetchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755714052033_85l6bv976",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "Misannn-financing",
+          "github": "Misannn",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755718699032_e7l8eex7i",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "Moyowa-financing",
+          "github": "Moyowa",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755721344327_ndaxjn2zh",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "James-financing",
+          "github": "James",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755721380923_gb4gshbwj",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "Hboadibcpaoidcad-financing",
+          "github": "Hboadibcpaoidcad",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755724516672_2eakralda",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetc-devil-red",
+          "github": "misanetc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755811633521_nu6s34hxj",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetchie-devil-red",
+          "github": "misanetchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755764913009_tmdlstl0t",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-nation",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755766014216_gsaidrvw5",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-nation",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755766099513_d2br0y8z2",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-superstar",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755766201700_53lszlrsy",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-superstar",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755789733776_zlptdsmm0",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-wedding",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755789740781_ewzr0u8hg",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-wedding",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a770b8140b9c0174c13ce7",
+      "userCount": 2,
+      "users": [
+        {
+          "userId": "marcogerosa-cs386-software-engineering",
+          "github": "marcogerosa",
+          "storedValues": {}
+        },
+        {
+          "userId": "marcogerosa2-cs386-software-engineering",
+          "github": "marcogerosa2",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755812367597_lpqym4x69",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MISANSadcadcadcad-devil-red",
+          "github": "MISANSadcadcadcad",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755812415391_92ksuwasb",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "dacadcad-devil-red",
+          "github": "dacadcad",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755812498576_rqb0h673c",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "ddaxda-devil-red",
+          "github": "ddaxda",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755812512156_4yenwvi0o",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "adsxasx-devil-red",
+          "github": "adsxasx",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755812647872_g6frvs5z6",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "daxd-devil-red",
+          "github": "daxd",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755813008245_t4exf6pq4",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "dwxdaud-devil-red",
+          "github": "dwxdaud",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755813066281_0gb1sa7tk",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "dddd-devil-red",
+          "github": "dddd",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755813156782_oihg4yw0h",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanatNAU-gaslight",
+          "github": "MisanatNAU",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755813162840_4fg3gfipa",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "MisanEtchie-gaslight",
+          "github": "MisanEtchie",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755813631844_vkiiz4ul7",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "dcadcadxadsxa-superstar",
+          "github": "dcadcadxadsxa",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755827435138_ehginlidq",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "testuser123-testclass",
+          "github": "testuser123",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755827483246_v99f7y06j",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "testuser456-testclass",
+          "github": "testuser456",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755827536304_7zt4lllwn",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "testuser789-testclass",
+          "github": "testuser789",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755827601599_a3gbzvmzj",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "testuser999-testclass",
+          "github": "testuser999",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "group_1755827637745_62xttvxaj",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "freshuser001-testclass",
+          "github": "freshuser001",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a79510f6fdc0ad68bec2b1",
+      "userCount": 5,
+      "users": [
+        {
+          "userId": "moyowaaa-gaslight",
+          "github": "moyowaaa",
+          "storedValues": {}
+        },
+        {
+          "userId": "kevinn-gaslight",
+          "github": "kevinn",
+          "storedValues": {}
+        },
+        {
+          "userId": "misanetc-gaslight",
+          "github": "misanetc",
+          "storedValues": {}
+        },
+        {
+          "userId": "kjvugcyutyrtezxrycuvibo-gaslight",
+          "github": "kjvugcyutyrtezxrycuvibo",
+          "storedValues": {}
+        },
+        {
+          "userId": "misanatnau-gaslight",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a8f22b6cc0718cb98d6b43",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetc-spellit",
+          "github": "misanetc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a95b1e6cc0718cb98d6d86",
+      "userCount": 4,
+      "users": [
+        {
+          "userId": "misanetc-hansen",
+          "github": "misanetc",
+          "storedValues": {}
+        },
+        {
+          "userId": "misanatnau-hansen",
+          "github": "misanatnau",
+          "storedValues": {}
+        },
+        {
+          "userId": "moyowaaa-hansen",
+          "github": "moyowaaa",
+          "storedValues": {}
+        },
+        {
+          "userId": "WSEDRFSGTHYJYJTFR-hansen",
+          "github": "WSEDRFSGTHYJYJTFR",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a95c456cc0718cb98d6e36",
+      "userCount": 4,
+      "users": [
+        {
+          "userId": "misanetc-trends",
+          "github": "misanetc",
+          "storedValues": {}
+        },
+        {
+          "userId": "mjhugycxf-trends",
+          "github": "mjhugycxf",
+          "storedValues": {}
+        },
+        {
+          "userId": "Jamesoiabdhsvugc-trends",
+          "github": "Jamesoiabdhsvugc",
+          "storedValues": {}
+        },
+        {
+          "userId": "xadcadcadcadcdac-trends",
+          "github": "xadcadcadcadcdac",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a962f56cc0718cb98d6ed8",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "adcadcadcad-angels",
+          "github": "adcadcadcad",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a964316cc0718cb98d6f17",
+      "userCount": 8,
+      "users": [
+        {
+          "userId": "Jameswdcdacxdxcadx-numbers",
+          "github": "Jameswdcdacxdxcadx",
+          "storedValues": {}
+        },
+        {
+          "userId": "wxdsaxadxadxdxasd-numbers",
+          "github": "wxdsaxadxadxdxasd",
+          "storedValues": {}
+        },
+        {
+          "userId": "misanetc-numbers",
+          "github": "misanetc",
+          "storedValues": {}
+        },
+        {
+          "userId": "opibhbuoijpib-numbers",
+          "github": "opibhbuoijpib",
+          "storedValues": {}
+        },
+        {
+          "userId": "ouivyuibu-numbers",
+          "github": "ouivyuibu",
+          "storedValues": {}
+        },
+        {
+          "userId": "SSDCADCADDA-numbers",
+          "github": "SSDCADCADDA",
+          "storedValues": {}
+        },
+        {
+          "userId": "xcdxacda-numbers",
+          "github": "xcdxacda",
+          "storedValues": {}
+        },
+        {
+          "userId": "dcadcdscsd-numbers",
+          "github": "dcadcdscsd",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a96a386cc0718cb98d6fa7",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "sdadad-begging",
+          "github": "sdadad",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a96b9e6cc0718cb98d6ff2",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misdcdcdcsd-lot",
+          "github": "misdcdcdcsd",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a96a28036bb122b0ae677b",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetc-grecko",
+          "github": "misanetc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a9ea716cc0718cb98d70aa",
+      "userCount": 2,
+      "users": [
+        {
+          "userId": "misanetc-ordinary",
+          "github": "misanetc",
+          "storedValues": {}
+        },
+        {
+          "userId": "adccadc-ordinary",
+          "github": "adccadc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a9ec9e6cc0718cb98d7112",
+      "userCount": 2,
+      "users": [
+        {
+          "userId": "misanetc-sdcdacaiocadcda",
+          "github": "misanetc",
+          "storedValues": {}
+        },
+        {
+          "userId": "misanatnau-sdcdacaiocadcda",
+          "github": "misanatnau",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a9eec06cc0718cb98d7165",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetc-delaware",
+          "github": "misanetc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a9f17fa704b363e10dc032",
+      "userCount": 2,
+      "users": [
+        {
+          "userId": "mdapiouicv-trap",
+          "github": "mdapiouicv",
+          "storedValues": {}
+        },
+        {
+          "userId": "adcadca-trap",
+          "github": "adcadca",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68a9f66da704b363e10dc1cf",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "kidsvcu-vevrion",
+          "github": "kidsvcu",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_misaninosabduicvhj_current_1755970027656_qax13dxu9",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misaninosabduicvhj-current",
+          "github": "misaninosabduicvhj",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_adcadcsadcdascdas_basic_1755970294018_08cfqh0lr",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "adcadcsadcdascdas-basic",
+          "github": "adcadcsadcdascdas",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_sdccdcsdcsd_basic_1755970383160_7tai59hbt",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "sdccdcsdcsd-basic",
+          "github": "sdccdcsdcsd",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_cadcadcad_basic_1755970413594_aux7hg6pq",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "cadcadcad-basic",
+          "github": "cadcadcad",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_sdfcvsdcsd_sdcdacda_1755973750519_f2iknbgn6",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "sdfcvsdcsd-sdcdacda",
+          "github": "sdfcvsdcsd",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_sdcdac_sdcdacda_1755973845309_xnymswxfq",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "sdcdac-sdcdacda",
+          "github": "sdcdac",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_dcacadc_sdcdacda_1755973907205_388pnzr5j",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "dcacadc-sdcdacda",
+          "github": "dcacadc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_wdacadc_sdcdacda_1755974332225_muq251fom",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "wdacadc-sdcdacda",
+          "github": "wdacadc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "68aa0cfc6cc0718cb98d71c1",
+      "userCount": 3,
+      "users": [
+        {
+          "userId": "sadcadcds-cheaterr",
+          "github": "sadcadcds",
+          "storedValues": {}
+        },
+        {
+          "userId": "csdcadc-cheaterr",
+          "github": "csdcadc",
+          "storedValues": {}
+        },
+        {
+          "userId": "xascxasc-cheaterr",
+          "github": "xascxasc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_adcadcakigyufdtyr_messages_1756013811965_07chs5nyv",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "adcadcakigyufdtyr-messages",
+          "github": "adcadcakigyufdtyr",
+          "storedValues": {
+            "group partners": "liugfyvk"
+          }
+        }
+      ]
+    },
+    {
+      "classId": "repo_luigfyudtfyig_messages_1756015039337_ldajhyv2m",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "luigfyudtfyig-messages",
+          "github": "luigfyudtfyig",
+          "storedValues": {
+            "groupPartners": "jake, kelly, mike"
+          }
+        }
+      ]
+    },
+    {
+      "classId": "repo_uytkcyvlib_messages_1756015763270_4khcocu7s",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "uytkcyvlib-messages",
+          "github": "uytkcyvlib",
+          "storedValues": {
+            "groupPartnersChosen": "john, james, jamie"
+          }
+        }
+      ]
+    },
+    {
+      "classId": "repo_acadcadcadcadcadcadcadcad_messages_1756016216166_qc2h6gk0x",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "acadcadcadcadcadcadcadcad-messages",
+          "github": "acadcadcadcadcadcadcadcad",
+          "storedValues": {
+            "groupPartnersChosen": "sdcd,c akdjcvhiad coiadb"
+          }
+        }
+      ]
+    },
+    {
+      "classId": "repo_court_messages_1756017971234_c5uz808sp",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "court-messages",
+          "github": "court",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_ashley001_messages_1756027989145_kzscn0n6r",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "ashley001-messages",
+          "github": "ashley001",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_ashley002_messages_1756028041655_1nrbw67m1",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "ashley002-messages",
+          "github": "ashley002",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_ashley003_messages_1756028064803_dph114lt9",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "ashley003-messages",
+          "github": "ashley003",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_aadcadc_website_1756028185759_h0pd3wf1d",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "aadcadc-website",
+          "github": "aadcadc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_cadcadc_off_1756028241722_ghfp3em97",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "cadcadc-off",
+          "github": "cadcadc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_lkjcghflch_website_1756031650784_e5av522cd",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "lkjcghflch-website",
+          "github": "lkjcghflch",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_adsfv_poverty_1756033585138_9bqry0rhl",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "adsfv-poverty",
+          "github": "adsfv",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_kjckl_atom_1756035084522_wn7m9ow2i",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "kjckl-atom",
+          "github": "kjckl",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_sdgbfhg_atom_1756035142437_698tvf8i0",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "sdgbfhg-atom",
+          "github": "sdgbfhg",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_scfcsf_irony_1756035535931_qlb1wiwks",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "scfcsf-irony",
+          "github": "scfcsf",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_dacd_distinct_1756036089462_9owyumvg4",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "dacd-distinct",
+          "github": "dacd",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_cdsacadc_understand_1756036672477_4h7u9s3zh",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "cdsacadc-understand",
+          "github": "cdsacadc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_lbjvk_slept_1756047481439_x2ng4vzv5",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "lbjvk-slept",
+          "github": "lbjvk",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_misanetc_despise_1756049959092_8q8socvly",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "misanetc-despise",
+          "github": "misanetc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_nsjdddddd_learn_1756050082475_p0ubquu7n",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "nsjdddddd-learn",
+          "github": "nsjdddddd",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_sdcsdc_here_1756051369863_0d2as9hb3",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "sdcsdc-here",
+          "github": "sdcsdc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_ljkgfjhk_same_1756060801316_l6hgw7nk1",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "ljkgfjhk-same",
+          "github": "ljkgfjhk",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_adcadcadccadcad_same_1756060865919_0idns3k21",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "adcadcadccadcad-same",
+          "github": "adcadcadccadcad",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_bhouigfyu_software_1756062808929_t0k3x2t90",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "bhouigfyu-software",
+          "github": "bhouigfyu",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_csacadc_software_1756062879482_a4br6ygh9",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "csacadc-software",
+          "github": "csacadc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_klbldakbxla_software_1756062985542_4d2p1d26y",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "klbldakbxla-software",
+          "github": "klbldakbxla",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_iadhvcad_software_1756063206213_3ihwoiofi",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "iadhvcad-software",
+          "github": "iadhvcad",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_dasxsa_software_1756063553834_zgyvqwiku",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "dasxsa-software",
+          "github": "dasxsa",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_asxs_software_1756063800199_uh5iwtmgg",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "asxs-software",
+          "github": "asxs",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_muigyuftdy_software_1756064076012_3gor11355",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "muigyuftdy-software",
+          "github": "muigyuftdy",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_nbljbl_software_1756064440527_3iju27tv3",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "nbljbl-software",
+          "github": "nbljbl",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_oicxyuisxs_software_1756064893697_25i2gbbmh",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "oicxyuisxs-software",
+          "github": "oicxyuisxs",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_bj_david_1756065486047_d95i0hr2x",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "bj-david",
+          "github": "bj",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_csdcsdc_friend_1756065902278_fyha2j5c2",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "csdcsdc-friend",
+          "github": "csdcsdc",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_sfcdcsd_ordinary_1756066407343_qd0x3nhhf",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "sfcdcsd-ordinary",
+          "github": "sfcdcsd",
+          "storedValues": {}
+        }
+      ]
+    },
+    {
+      "classId": "repo_dcdacadcda_friend_1756066687972_ucfn2lmu5",
+      "userCount": 1,
+      "users": [
+        {
+          "userId": "dcdacadcda-friend",
+          "github": "dcdacadcda",
+          "storedValues": {
+            "collected_info": "my name is misan"
+          }
+        }
+      ]
+    }
+  ]
+}

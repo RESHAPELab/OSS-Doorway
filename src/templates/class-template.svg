@@ -1,0 +1,274 @@
+<svg
+        width="850"
+        height="${viewHeight}"
+        viewBox="0 0 850 ${viewHeight}"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-labelledby="descId"
+    >
+        <title id="titleId">${className} - Quest Progress</title>
+        <desc id="descId">Quest Progress for ${className}</desc>
+        
+        <!-- Gradient Definitions -->
+        <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1E90FF;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#4169E1;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00BFFF;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="rankGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF8C00;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="streakGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF1493;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#FF69B4;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#FFB6C1;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#21262d;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#21262d;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#21262d;stop-opacity:1" />
+        </linearGradient>
+        
+        <style>
+            .header {
+                font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+                fill: #ffffff;
+                animation: fadeInAnimation 0.8s ease-in-out forwards;
+            }
+            @supports(-moz-appearance: auto) {
+                .header { font-size: 15.5px; }
+            }
+            
+            .stat {
+                font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; 
+                fill: white;
+            }
+            @supports(-moz-appearance: auto) {
+                .stat { font-size: 12px; }
+            }
+            .stagger {
+                opacity: 0;
+                animation: fadeInAnimation 0.3s ease-in-out forwards;
+            }
+            .rank-text {
+                font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; 
+                fill: white;
+                animation: scaleInAnimation 0.3s ease-in-out forwards;
+            }
+            .rank-text-small {
+                font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; 
+                fill: white;
+            }
+            
+            .not_bold { font-weight: 400 }
+            .bold { font-weight: 700 }
+    
+            .circle-rim {
+                stroke: #2f80ed;
+                fill: none;
+                stroke-width: 6;
+                opacity: 0.2;
+            }
+            .rank-circle {
+                stroke: url(#rankGradient);
+                stroke-dasharray: ${rankCircumference};
+                stroke-dashoffset: ${rankOffset};
+                fill: none;
+                stroke-width: 6;
+                stroke-linecap: round;
+                opacity: 0.8;
+                transform-origin: -10px 8px;
+                transform: rotate(-90deg);
+                animation: rankAnimation 1s forwards ease-in-out;
+            }
+            
+            @keyframes rankAnimation {
+                from {
+                    stroke-dashoffset: ${rankCircumference};
+                }
+                to {
+                    stroke-dashoffset: ${rankOffset};
+                }
+            }
+            .streak-circle {
+                stroke: url(#streakGradient);
+                stroke-dasharray: ${streakCircumference};
+                stroke-dashoffset: ${streakOffset};
+                fill: none;
+                stroke-width: 6;
+                stroke-linecap: round;
+                opacity: 0.8;
+                transform-origin: -10px 8px;
+                transform: rotate(-90deg);
+                animation: streakAnimation 1s forwards ease-in-out;
+            }
+            
+            @keyframes streakAnimation {
+                from {
+                    stroke-dashoffset: ${streakCircumference};
+                }
+                to {
+                    stroke-dashoffset: ${streakOffset};
+                }
+            }
+            .progress-circle {
+                stroke: url(#progressGradient);
+                stroke-dasharray: ${progressCircumference};
+                stroke-dashoffset: ${progressOffset};
+                fill: none;
+                stroke-width: 6;
+                stroke-linecap: round;
+                opacity: 0.8;
+                transform-origin: -10px 8px;
+                transform: rotate(-90deg);
+                animation: progressAnimation 1s forwards ease-in-out;
+            }
+            
+            @keyframes progressAnimation {
+                from {
+                    stroke-dashoffset: ${progressCircumference};
+                }
+                to {
+                    stroke-dashoffset: ${progressOffset};
+                }
+            }
+        
+            /* Animations */
+            @keyframes scaleInAnimation {
+                from {
+                    transform: translate(-5px, 5px) scale(0);
+                }
+                to {
+                    transform: translate(-5px, 5px) scale(1);
+                } 
+            }
+            @keyframes fadeInAnimation {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        </style>
+    
+        <rect
+            data-testid="card-bg"
+            x="0.5"
+            y="0.5"
+            rx="20"
+            ry="20"
+            height="99%"
+            stroke="#e4e2e2"
+            width="849"
+            fill="url(#backgroundGradient)"
+            stroke-opacity="1"
+        />
+    
+        <g data-testid="card-title" transform="translate(25, 35)">
+            <g transform="translate(0, 0)">
+                <text x="0" y="0" class="header" data-testid="header">${className} - Quest Progress</text>
+            </g>
+        </g>
+    
+        <g data-testid="main-card-body" transform="translate(0, 55)">
+
+            <!-- Your Progress Circle -->
+            <g data-testid="progress-circle" transform="translate(465, 30)">
+                <circle class="circle-rim" cx="-10" cy="8" r="40" />
+                <circle class="progress-circle" cx="-10" cy="8" r="40" />
+                <g class="rank-text">
+                    <text x="-10" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="progress-percentage">${userProgressPercent}%</text>
+                    <text x="-10" y="-55" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" class="stat bold" fill="#ffffff">Your Progress 🎯</text>
+                </g>
+            </g>
+
+            <!-- Class Rank Circle -->
+            <g data-testid="rank-circle" transform="translate(600, 30)">
+                <circle class="circle-rim" cx="-10" cy="8" r="40" />
+                <circle class="rank-circle" cx="-10" cy="8" r="40" />
+                <g class="rank-text-small">
+                    <text x="-10" y="-3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="rank-top">${classRankTop}</text>
+                    <text x="-10" y="12" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="rank-percent">${classRankPercent}</text>
+                    <text x="-10" y="-55" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" class="stat bold" fill="#ffffff">Class Rank 📊</text>
+                </g>
+            </g>
+
+            <!-- Streak Circle -->
+            <g data-testid="streak-circle" transform="translate(735, 30)">
+                <circle class="circle-rim" cx="-10" cy="8" r="40" />
+                <circle class="streak-circle" cx="-10" cy="8" r="40" />
+                <g class="rank-text">
+                    <text x="-10" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="current-streak">${currentStreak}/3</text>
+                    <text x="-10" y="-55" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" class="stat bold" fill="#ffffff">Task Streak 🔥</text>
+                </g>
+            </g>
+
+    
+            <svg x="0" y="0">
+                <!-- Current Quest Info -->
+                <g transform="translate(0, 0)">
+                    <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
+                        <text class="stat bold" y="12.5">Current Quest:</text>
+                        <text class="stat bold" x="199.01" y="12.5" data-testid="current-quest">${currentQuestId}</text>
+                    </g>
+                </g>
+                <g transform="translate(0, 25)">
+                    <g class="stagger" style="animation-delay: 550ms" transform="translate(25, 0)">
+                        <text class="stat bold" y="12.5">Quest Title:</text>
+                        <text class="stat bold" x="199.01" y="12.5" data-testid="quest-title">${currentQuestTitle}</text>
+                    </g>
+                </g>
+                <g transform="translate(0, 37)">
+                    <g class="stagger" style="animation-delay: 550ms" transform="translate(25, 0)">
+                        <text class="stat bold" x="199.01" y="12.5" data-testid="quest-title-continuation">${currentQuestTitleContinuation}</text>
+                    </g>
+                </g>
+                <g transform="translate(0, 62)">
+                    <g class="stagger" style="animation-delay: 650ms" transform="translate(25, 0)">
+                        <text class="stat bold" y="12.5">Quest Tasks:</text>
+                        <text class="stat bold" x="199.01" y="12.5" data-testid="quest-tasks">${currentQuestTasks}</text>
+                    </g>
+                </g>
+                
+                <!-- Points -->
+                <g transform="translate(0, 87)">
+                    <g class="stagger" style="animation-delay: 850ms" transform="translate(25, 0)">
+                        <text class="stat bold" y="12.5">💎 Points:</text>
+                        <text class="stat bold" x="199.01" y="12.5" data-testid="points">${points}</text>
+                    </g>
+                </g>
+                
+                <!-- Streaks Completed -->
+                <g transform="translate(0, 112)">
+                    <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
+                        <text class="stat bold" y="12.5">🔥 Streaks Completed:</text>
+                        <text class="stat bold" x="199.01" y="12.5" data-testid="streaks-completed">${streakCount}</text>
+                    </g>
+                </g>
+                
+                <!-- Quests Completed -->
+                <g transform="translate(0, 137)">
+                    <g class="stagger" style="animation-delay: 950ms" transform="translate(25, 0)">
+                        <text class="stat bold" y="12.5">✅ Quests Completed:</text>
+                        <text class="stat bold" x="199.01" y="12.5" data-testid="quests-done">${numCompleted}</text>
+                    </g>
+                </g>
+                
+                <!-- Performance Badge -->
+                <g transform="translate(0, 162)">
+                    <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
+                        <text class="stat bold" y="12.5">🏆 Badge:</text>
+                        <text class="stat bold" x="199.01" y="12.5" data-testid="performance-badge">${performanceBadge}</text>
+                    </g>
+                </g>
+            </svg>
+        </g>
+    </svg>
+

@@ -1,0 +1,202 @@
+{
+  "map_repo_link": "https://github.com/RESHAPELab/reshapelab",
+  "readme": "# Welcome to Your Quest!\n\nThis repository contains your personalized learning journey.\n\n## Getting Started\n\n1. Check the issues tab for your first quest\n2. Complete tasks in order\n3. Use comments to submit your answers\n\nGood luck! 🚀",
+  "questSequence": [
+    {
+      "questId": "RESHAPE_INTRO",
+      "title": "Introduction to RESHAPE Lab",
+      "isQ0": true,
+      "questType": "custom",
+      "sequenceNumber": 0,
+      "metadata": {
+        "title": "Introduction to RESHAPE Lab",
+        "description": "Learn about the RESHAPE Lab and Open Source Software fundamentals",
+        "prerequisite": null,
+        "type": "custom"
+      },
+      "badgeDescription": "RESHAPE Lab Explorer 🧭",
+      "tasks": {
+        "T1": {
+          "desc": "What is the RESHAPE Lab?",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** What is the primary focus of the RESHAPE Lab at Northern Arizona University?\n\nA) Hardware engineering and cyber security\nB) Human aspects and educational facets of software engineering\nC) Mobile app development and UI design\nD) Database management and data analytics\n\n**Instructions:** Select the correct answer that best describes the RESHAPE Lab's main research focus.",
+          "success": "✅ **Correct!**\n\nExcellent! The RESHAPE Lab is indeed dedicated to exploring the human aspects and educational facets of software engineering.\n\n**Points earned:** 100\n\nGreat start! 🎉",
+          "error": "❌ **Incorrect Answer**\n\nThat's not quite right. The RESHAPE Lab focuses on the human side of software engineering.\n\n**Hint:** Think about how people interact with software and learn software engineering practices.",
+          "answer": "b",
+          "hints": []
+        },
+        "T2": {
+          "desc": "RESHAPE Lab Leadership",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** Who are the two professors leading the RESHAPE Lab?\n\nA) Ana Paula Steinmacher and Bianca Trinkenreich\nB) Igor Steinmacher and Marco Gerosa\nC) Marieli Wessel and Igor Wiese\nD) Jacob Penney and Pedro Oliveira\n\n**Instructions:** Select the correct pair of professors who lead the RESHAPE Lab.",
+          "success": "✅ **Correct!**\n\nPerfect! Igor Steinmacher and Marco Gerosa are indeed the professors leading the RESHAPE Lab at NAU.\n\n**Points earned:** 100\n\nWell done! 🌟",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the right combination. Look for the professors specifically mentioned as leading the lab.",
+          "answer": "b",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "RESHAPE_ANALYSIS",
+      "title": "RESHAPE Lab Repository Analysis",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 1,
+      "metadata": {
+        "title": "RESHAPE Lab Repository Analysis",
+        "description": "Analyze the RESHAPE Lab GitHub repository and learn about their research",
+        "prerequisite": "RESHAPE_INTRO",
+        "type": "custom"
+      },
+      "badgeDescription": "Repository Analyst 📊",
+      "tasks": {
+        "T1": {
+          "desc": "Count Issues in RESHAPE Lab Repository",
+          "points": 150,
+          "xp": 150,
+          "type": "get-issue-count",
+          "ossRepository": "RESHAPELab/reshapelab",
+          "accept": "**Objective:** Analyze the RESHAPE Lab's main repository to understand their project management practices.\n\n**Task:** Go to the repository https://github.com/RESHAPELab/reshapelab and count the number of open issues. Reply with the number.",
+          "success": "✅ **Correct Answer!**\n\nGreat job! You've successfully analyzed the RESHAPE Lab repository.\n\n**Points earned:** 150\n\nExcellent research skills! 🔍",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the right number of open issues. Please check the repository again.",
+          "answer": "",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "CUSTOM_TEST_MCQ",
+      "title": "QT Test MCQ",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 2,
+      "metadata": {
+        "title": "QT Test MCQ",
+        "description": "QDESC Test MCQ",
+        "prerequisite": "RESHAPE_ANALYSIS",
+        "type": "custom"
+      },
+      "badgeDescription": "Custom Quest 🎯",
+      "tasks": {
+        "T1": {
+          "desc": "TDESC Test MCQ",
+          "points": 100,
+          "xp": 100,
+          "hints": [],
+          "type": "multiple-choice",
+          "accept": "WHICH IS CORRECT \n\nA) Test MCQ\nB) Test MCQ\nC) Test MCQ\nD) Test MCQ",
+          "success": "SUCESS Test MCQ",
+          "error": "ERROR Test MCQ",
+          "answer": "a"
+        }
+      }
+    },
+    {
+      "questId": "CUSTOM_TEST_QUIZ",
+      "title": "QT Test QUIZ",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 3,
+      "metadata": {
+        "title": "QT Test QUIZ",
+        "description": "QDESC Test QUIZ",
+        "prerequisite": "CUSTOM_TEST_MCQ",
+        "type": "custom"
+      },
+      "badgeDescription": "Custom Quest 🎯",
+      "tasks": {
+        "T1": {
+          "desc": "TD Test QUIZ",
+          "points": 100,
+          "xp": 100,
+          "hints": [],
+          "type": "quiz",
+          "questions": [
+            {
+              "question": "Test QUIZ 1",
+              "optionA": "Test QUIZ",
+              "optionB": "Test QUIZ",
+              "optionC": "Test QUIZ",
+              "optionD": "Test QUIZ",
+              "correctAnswer": "a",
+              "explanation": "EXPL Test QUIZ"
+            },
+            {
+              "question": "Test QUIZ 2",
+              "optionA": "Test QUIZ",
+              "optionB": "Test QUIZ",
+              "optionC": "Test QUIZ",
+              "optionD": "Test QUIZ",
+              "correctAnswer": "b",
+              "explanation": "Test QUIZ"
+            }
+          ],
+          "accept": "**Multi-Question Quiz**\n\n**Instructions:** Answer all questions and submit your answers in the format [a,b,c] where each letter corresponds to your answer for each question.\n\n**Example:** If you think the answers are A, C, B, type: [a,c,b]\n\n\n\n**Question 1:** Test QUIZ 1\n\nA) Test QUIZ\nB) Test QUIZ\nC) Test QUIZ\nD) Test QUIZ\n\n**Question 2:** Test QUIZ 2\n\nA) Test QUIZ\nB) Test QUIZ\nC) Test QUIZ\nD) Test QUIZ\n\n ",
+          "success": "✅ **Quiz Completed!**\n\nExcellent work! You've completed the quiz.\n\n**Points earned:** 100\n\nYou correctly answered {correctCount} out of 2 questions! 🎯",
+          "error": "❌ **Quiz Submission Error**\n\nPlease check your answer format and try again.\n\n**Required format:** [a,b,c] where each letter is your answer choice.\n\n**Example:** [a,c,b,d]\n\nYou can type \"help\" for additional guidance.",
+          "answer": ""
+        }
+      }
+    },
+    {
+      "questId": "CUSTOM_TEST_ISSUE_COUNT",
+      "title": "QT TEST issue count",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 4,
+      "metadata": {
+        "title": "QT TEST issue count",
+        "description": "QDesc TEST issue count",
+        "prerequisite": "CUSTOM_TEST_QUIZ",
+        "type": "custom"
+      },
+      "badgeDescription": "Custom Quest 🎯",
+      "tasks": {
+        "T1": {
+          "desc": "TD TEST issue count",
+          "points": 100,
+          "xp": 100,
+          "hints": [],
+          "type": "get-issue-count",
+          "ossRepository": "RESHAPELab/reshapelab/",
+          "accept": "**Objective:** OBJ TEST issue count\n\n**Task:** Go to the repository https://github.com/RESHAPELab/reshapelab/ and count the number of open issues. Reply with the number.\n\n**Help:** Look for the 'Issues' tab on the repository page. Make sure you're counting issues, not pull requests.",
+          "success": "✅ **Correct Answer!**\n\nGreat job! You've successfully analyzed the repository and counted the open issues.\n\n**What you learned:** Repository issue tracking is essential for project management.\n\n**Points earned:** 100\n\nExcellent research skills! 🔍",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the right number of open issues. Please check the repository again.\n\n**Hint:** Make sure you're looking at the 'Issues' tab, not 'Pull requests'.\n\nYou can type \"help\" for additional hints.",
+          "answer": ""
+        }
+      }
+    },
+    {
+      "questId": "CUSTOM_TEST_OPEN",
+      "title": "QT TEST open",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 5,
+      "metadata": {
+        "title": "QT TEST open",
+        "description": "QD TEST open",
+        "prerequisite": "CUSTOM_TEST_ISSUE_COUNT",
+        "type": "custom"
+      },
+      "badgeDescription": "Custom Quest 🎯",
+      "tasks": {
+        "T1": {
+          "desc": "TD TEST open",
+          "points": 100,
+          "xp": 100,
+          "hints": [],
+          "type": "get-open-issue",
+          "ossRepository": "RESHAPELab/reshapelab/",
+          "accept": "**Objective:** OBJ TEST open\n\n**Task:** Go to the repository https://github.com/RESHAPELab/reshapelab/ and count the number of open issues. Reply with the number.\n\n**Help:** Look for the 'Issues' tab on the repository page. Count only the open issues, not closed ones.",
+          "success": "✅ **Correct Count!**\n\nExcellent! You've successfully counted the open issues in the repository.\n\n**What you learned:** Understanding issue counts helps assess project activity and maintenance needs.\n\n**Points earned:** 100\n\nGreat attention to detail! 📊",
+          "error": "❌ **Incorrect Count**\n\nThat's not the right number of open issues. Please check the repository again.\n\n**Hint:** Make sure you're looking at the 'Issues' tab and counting only open issues.\n\nYou can type \"help\" for additional hints.",
+          "answer": ""
+        }
+      }
+    }
+  ]
+}

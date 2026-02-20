@@ -1,0 +1,185 @@
+{
+  "map_repo_link": "https://github.com/RESHAPELab/reshapelab",
+  "questSequence": [
+    {
+      "questId": "RESHAPE_INTRO",
+      "title": "Introduction to RESHAPE Lab",
+      "isQ0": true,
+      "questType": "custom",
+      "sequenceNumber": 0,
+      "metadata": {
+        "title": "Introduction to RESHAPE Lab",
+        "description": "Learn about the RESHAPE Lab and Open Source Software fundamentals",
+        "prerequisite": null,
+        "type": "custom"
+      },
+      "badgeDescription": "RESHAPE Lab Explorer 🧭",
+      "tasks": {
+        "T1": {
+          "desc": "What is the RESHAPE Lab?",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** What is the primary focus of the RESHAPE Lab at Northern Arizona University?\n\nA) Hardware engineering and cyber security\nB) Human aspects and educational facets of software engineering\nC) Mobile app development and UI design\nD) Database management and data analytics\n\n**Instructions:** Select the correct answer that best describes the RESHAPE Lab's main research focus.",
+          "success": "✅ **Correct!**\n\nExcellent! The RESHAPE Lab is indeed dedicated to exploring the human aspects and educational facets of software engineering. The lab focuses on understanding how individuals interact with software systems and how educational methodologies can enhance software engineering practices.\n\n**Points earned:** 100\n\nGreat start! 🎉",
+          "error": "❌ **Incorrect Answer**\n\nThat's not quite right. The RESHAPE Lab focuses on the human side of software engineering, not just technical aspects.\n\n**Hint:** Think about how people interact with software and learn software engineering practices.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "Hardware engineering and cyber security",
+          "optionB": "Human aspects and educational facets of software engineering",
+          "optionC": "Mobile app development and UI design",
+          "optionD": "Database management and data analytics",
+          "hints": []
+        },
+        "T2": {
+          "desc": "RESHAPE Lab Leadership",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** Who are the two professors leading the RESHAPE Lab?\n\nA) Ana Paula Steinmacher and Bianca Trinkenreich\nB) Igor Steinmacher and Marco Gerosa\nC) Marieli Wessel and Igor Wiese\nD) Jacob Penney and Pedro Oliveira\n\n**Instructions:** Select the correct pair of professors who lead the RESHAPE Lab.",
+          "success": "✅ **Correct!**\n\nPerfect! Igor Steinmacher and Marco Gerosa are indeed the professors leading the RESHAPE Lab at NAU.\n\n**What you learned:** The RESHAPE Lab is led by two experienced researchers in software engineering who focus on human-centered approaches.\n\n**Points earned:** 100\n\nWell done! 🌟",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the right combination. Look for the professors specifically mentioned as leading the lab.\n\n**Hint:** Check the \"PROFESSORS\" section on the team page.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "Ana Paula Steinmacher and Bianca Trinkenreich",
+          "optionB": "Igor Steinmacher and Marco Gerosa",
+          "optionC": "Marieli Wessel and Igor Wiese",
+          "optionD": "Jacob Penney and Pedro Oliveira",
+          "hints": []
+        },
+        "T3": {
+          "desc": "Open Source Software Understanding",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** What does OSS stand for in the context of software development?\n\nA) Operating System Software\nB) Online Software Services\nC) Open Source Software\nD) Optimized System Solutions\n\n**Instructions:** Select the correct definition of the OSS acronym.",
+          "success": "✅ **Correct!**\n\nExcellent! OSS stands for Open Source Software. This is software whose source code is freely available for anyone to view, modify, and distribute.\n\n**What you learned:** Open Source Software is a fundamental concept in modern software development, promoting collaboration and transparency.\n\n**Points earned:** 100\n\nGreat foundation knowledge! 🚀",
+          "error": "❌ **Incorrect Answer**\n\nThat's not correct. OSS is a common acronym in software development related to code accessibility.\n\n**Hint:** Think about software where the source code is publicly available and can be modified by anyone.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "c",
+          "optionA": "Operating System Software",
+          "optionB": "Online Software Services",
+          "optionC": "Open Source Software",
+          "optionD": "Optimized System Solutions",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "RESHAPE_ANALYSIS",
+      "title": "RESHAPE Lab Repository Analysis",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 1,
+      "metadata": {
+        "title": "RESHAPE Lab Repository Analysis",
+        "description": "Analyze the RESHAPE Lab GitHub repository and learn about their research",
+        "prerequisite": "RESHAPE_INTRO",
+        "type": "custom"
+      },
+      "badgeDescription": "Repository Analyst 📊",
+      "tasks": {
+        "T1": {
+          "desc": "Count Issues in RESHAPE Lab Repository",
+          "points": 150,
+          "xp": 150,
+          "type": "get-issue-count",
+          "ossRepository": "RESHAPELab/reshapelab",
+          "accept": "**Objective:** Analyze the RESHAPE Lab's main repository to understand their project management practices.\n\n**Task:** Go to the repository https://github.com/RESHAPELab/reshapelab and count the number of open issues. Reply with the number.\n\n**Help:** Look for the 'Issues' tab on the repository page. Make sure you're counting issues, not pull requests. The count should be visible next to the Issues tab.",
+          "success": "✅ **Correct Answer!**\n\nGreat job! You've successfully analyzed the RESHAPE Lab repository and counted the open issues.\n\n**What you learned:** Repository issue tracking is essential for project management. Issues help track bugs, feature requests, and discussions about the project.\n\n**Points earned:** 150\n\nExcellent research skills! 🔍",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the right number of open issues. Please check the repository again.\n\n**Hint:** Make sure you're looking at the 'Issues' tab, not 'Pull requests'. The number should be clearly visible next to the tab name.\n\nYou can type \"help\" for additional hints.",
+          "answer": "",
+          "hints": []
+        },
+        "T2": {
+          "desc": "Repository Language Analysis",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** Based on the RESHAPE Lab repository, what is the primary programming language used (highest percentage)?\n\nA) JavaScript\nB) Vue\nC) TeX\nD) Python\n\n**Instructions:** Look at the language breakdown in the repository and select the language with the highest percentage.",
+          "success": "✅ **Correct!**\n\nExcellent observation! TeX makes up 73.4% of the repository, making it the primary language. This suggests the repository contains significant documentation, papers, or LaTeX-based content.\n\n**What you learned:** Repository language analysis helps understand the project's nature and technology stack.\n\n**Points earned:** 100\n\nGreat analytical skills! 📈",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the primary language. Check the language breakdown section on the repository page.\n\n**Hint:** Look for the language with the highest percentage. It's over 70% of the codebase.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "c",
+          "optionA": "JavaScript",
+          "optionB": "Vue", 
+          "optionC": "TeX",
+          "optionD": "Python",
+          "hints": []
+        },
+        "T3": {
+          "desc": "Lab Research Focus",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** According to the RESHAPE Lab's description, what approach do they emphasize to improve software development processes?\n\nA) Algorithm optimization and performance tuning\nB) Human-centered approaches and effective educational strategies\nC) Automated testing and continuous integration\nD) Cloud computing and distributed systems\n\n**Instructions:** Select the approach that the RESHAPE Lab emphasizes in their research.",
+          "success": "✅ **Correct!**\n\nPerfect! The RESHAPE Lab emphasizes human-centered approaches and effective educational strategies to improve software development processes.\n\n**What you learned:** The lab's interdisciplinary research focuses on the human element in software engineering, which is often overlooked but crucial for success.\n\n**Points earned:** 100\n\nExcellent understanding! 👥",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the approach emphasized by the RESHAPE Lab. Think about their focus on human aspects.\n\n**Hint:** The lab focuses on how people interact with software and learn software engineering practices.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "Algorithm optimization and performance tuning",
+          "optionB": "Human-centered approaches and effective educational strategies",
+          "optionC": "Automated testing and continuous integration",
+          "optionD": "Cloud computing and distributed systems",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "RESHAPE_RESEARCH",
+      "title": "RESHAPE Lab Research and Achievements",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 2,
+      "metadata": {
+        "title": "RESHAPE Lab Research and Achievements",
+        "description": "Learn about the lab's recent research achievements and contributions",
+        "prerequisite": "RESHAPE_ANALYSIS",
+        "type": "custom"
+      },
+      "badgeDescription": "Research Scholar 🎓",
+      "tasks": {
+        "T1": {
+          "desc": "Recent Lab Achievements",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** According to the lab's news, what significant achievement occurred at ICSE 2024?\n\nA) RESHAPE Lab published a single paper\nB) RESHAPE Lab had a hat trick (three successes)\nC) RESHAPE Lab won a best paper award\nD) RESHAPE Lab hosted the conference\n\n**Instructions:** Select the correct description of RESHAPE Lab's achievement at ICSE 2024.",
+          "success": "✅ **Correct!**\n\nFantastic! The RESHAPE Lab indeed had a \"hat trick\" at ICSE 2024, meaning they achieved three successes at this prestigious conference.\n\n**What you learned:** ICSE (International Conference on Software Engineering) is one of the top venues in software engineering research, and achieving multiple successes there is significant.\n\n**Points earned:** 100\n\nImpressive research tracking! 🏆",
+          "error": "❌ **Incorrect Answer**\n\nThat's not quite right. Look for the specific term used to describe their multiple successes.\n\n**Hint:** Think of a sports term that describes three successes in a row.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "RESHAPE Lab published a single paper",
+          "optionB": "RESHAPE Lab had a hat trick (three successes)",
+          "optionC": "RESHAPE Lab won a best paper award",
+          "optionD": "RESHAPE Lab hosted the conference",
+          "hints": []
+        },
+        "T2": {
+          "desc": "Distinguished Award Recognition",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** Who from the RESHAPE Lab received the 2024 ACM SIGSOFT Distinguished Dissertation Award?\n\nA) Ana Paula Steinmacher\nB) Bianca Trinkenreich\nC) Marieli Wessel\nD) Igor Steinmacher\n\n**Instructions:** Select the person who received this prestigious award in 2024.",
+          "success": "✅ **Correct!**\n\nExcellent! Bianca Trinkenreich received the 2024 ACM SIGSOFT Distinguished Dissertation Award, which is a highly prestigious recognition in software engineering research.\n\n**What you learned:** The ACM SIGSOFT Distinguished Dissertation Award recognizes outstanding doctoral dissertations in software engineering.\n\n**Points earned:** 100\n\nGreat attention to detail! 🥇",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the correct recipient. Check the awards section in the lab's news.\n\n**Hint:** This person is listed as an Alumni (PhD) member of the team.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "Ana Paula Steinmacher",
+          "optionB": "Bianca Trinkenreich",
+          "optionC": "Marieli Wessel",
+          "optionD": "Igor Steinmacher",
+          "hints": []
+        },
+        "T3": {
+          "desc": "Lab Location and Affiliation",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** The RESHAPE Lab is located at which university and in which state?\n\nA) Northern Arizona University, Arizona\nB) University of Arizona, Arizona\nC) Arizona State University, Arizona\nD) Northern Arizona University, New Mexico\n\n**Instructions:** Select the correct university and state where the RESHAPE Lab is located.",
+          "success": "✅ **Correct!**\n\nPerfect! The RESHAPE Lab is indeed located at Northern Arizona University in Arizona, specifically at the School of Informatics, Computing, and Cyber Systems.\n\n**What you learned:** The lab is situated in Flagstaff, AZ, which provides a unique environment for interdisciplinary research in software engineering.\n\n**Points earned:** 100\n\nExcellent geographical knowledge! 🗺️",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the correct location. Check the lab's institutional affiliation.\n\n**Hint:** The university name includes \"Northern\" and the state matches the university name.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "a",
+          "optionA": "Northern Arizona University, Arizona",
+          "optionB": "University of Arizona, Arizona", 
+          "optionC": "Arizona State University, Arizona",
+          "optionD": "Northern Arizona University, New Mexico",
+          "hints": []
+        }
+      }
+    }
+  ]
+} 

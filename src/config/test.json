@@ -1,0 +1,123 @@
+{
+  "classTitle": "Intro to OSS",
+  "classCode": "EGR1",
+  "map_repo_link": "https://raw.githubusercontent.com/caiton1/OSS-Doorway/main/map",
+  "questSequence": [
+    {
+      "questId": "Q0",
+      "title": "Undertsnad our labGet to know the lab members",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 1,
+      "metadata": {
+        "title": "Undertsnad our labGet to know the lab members",
+        "description": "",
+        "prerequisite": null,
+        "type": "custom"
+      },
+      "badgeDescription": "Custom Quest 🎯",
+      "tasks": {
+        "T1": {
+          "desc": "Who is not a student at rESHAPE",
+          "points": 100,
+          "xp": 100,
+          "type": "mcq",
+          "accept": "**Objective:** Who is not a student at rESHAPE\n\n**Task:** Who is not a student at rESHAPE\n\n**Options:**\nA) Pedor\nB) Pwawan\nC) Jacon\nD) Kevinnn\n\n**Outcome:** Who is not a student at rESHAPE\n\n**Help:** dddd\n\nChoose the option that best answers the question.",
+          "success": "✅ **Correct Answer!**\n\nGreat job! You've successfully completed this task.\n\n**What you learned:** Who is not a student at rESHAPE\n\n**Points earned:** 100\n\nYou're making excellent progress! 🎉",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the right answer. Please review the question and try again.\n\n**Hint:** dddd\n\nYou can type \"help\" for additional hints (though it may cost you points).",
+          "answer": "d",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "Q2",
+      "title": "Q2: Forking and Contributing to Repositories",
+      "isQ0": false,
+      "questType": "fixed",
+      "sequenceNumber": 2,
+      "metadata": {
+        "title": "Q2: Forking and Contributing to Repositories",
+        "description": "Q2: Forking and Contributing to Repositories",
+        "prerequisite": "Q0",
+        "type": "general"
+      },
+      "badgeDescription": "Builder 🏗️",
+      "tasks": {
+        "T1": {
+          "desc": "Identify the assigned user for the issue",
+          "points": 25,
+          "xp": 25,
+          "type": "general",
+          "accept": "### 🎯 Task 1: Identify the Assigned User for the Issue\n\n**Objective:** In open-source collaboration, tracking issue ownership is crucial for effective project management. Your mission is to **find the assigned user** for the following issue and confirm their GitHub username.\n\n **Issue Number:** 91 \n\n**Task:** Type the assigned user's GitHub username (e.g., `your-username`) in the comment box below.\n\n**Outcome:** By identifying the assigned user, you demonstrate your ability to track project ownership and ensure accountability in open-source collaboration. This skill is essential for maintaining clarity and preventing duplicate efforts in a project.\n\n**Help:** Need assistance? Type **\"help\"** in the comment box to receive hints, but remember, each hint will cost you **5 points** from your total score.",
+          "error": "### 🚨 Oops, That's Not Quite Right!\n\nIt looks like the username you entered isn't the one assigned to this issue.\n\nNo worries—double-check the issue page, ensure you're looking at the correct issue, and try again!\n\nIf you need help, type **\"help\"** in the comment box, but remember, using hints will deduct **5 points** from your total score.\n\nWhen you're ready, submit the correct **GitHub username** of the assigned user and move forward in your contribution journey!",
+          "success": "### 🌟 Congratulations! You Successfully Identified the Assigned User!\n\nGreat job! You've demonstrated an important skill in open-source collaboration: **tracking issue ownership.** This ensures clarity, accountability, and smooth teamwork in any project.\n\n🏆 **Current Progress:** With this achievement, you've earned **${experiencePoints} points**, bringing you **${pointsRemaining} points** closer to Level 2!\n\n🎯 **Quest Advancement:** You're mastering the fundamentals of GitHub issue management. Understanding **who is responsible for which task** is key to contributing effectively and ensuring the project moves forward efficiently.\n\n💡 Keep up the great work! Your next challenge is just around the corner—let's continue this journey together! 🚀",
+          "answer": "a",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "Q3",
+      "title": "Q3",
+      "isQ0": false,
+      "questType": "fixed",
+      "sequenceNumber": 3,
+      "metadata": {
+        "title": "Q3",
+        "description": "Q3",
+        "prerequisite": "Q2",
+        "type": "general"
+      },
+      "badgeDescription": "Contributor 🥇",
+      "tasks": {
+        "T1": {
+          "desc": "Solve the issue (upload a file/make commit)",
+          "points": 50,
+          "xp": 50,
+          "type": "general",
+          "accept": "### 🛠️ Task 1 - Solve the Issue (Non-Code Contribution) and Submit a Pull Request\n\n**Objective:** Your mission involves two key stages: identifying and resolving a non-code issue in our GitHub repository and submitting your solution through a pull request (PR). This task focuses on improving the project's quality and accessibility without writing code, such as enhancing documentation, designing graphics, or organizing content.\n\n**Task:** Using the link below, **complete** the task in the issue assigned to you, **submit** a pull request, and choose the correct file in the options and comment it below.\n\nWhich file did you have to interact with to solve the issue?\n\nA) CONTRIBUTING.md\nB) LICENSE\nC) README.md\nD) CHANGELOG.md\n\n**Outcome:** By identifying and resolving a non-code issue and submitting a pull request, you contribute to the project's improvement. This task demonstrates your initiative and commitment to enhancing the project, deepening your understanding of open-source collaboration, and supporting the project's growth.\n\n**Help:** If you need help with this task, type \"help\" in the comment box to get hints, but it will cost you 5 points from your total score.",
+          "error": "### 🚨 Oops, That's Not Quite Right!\n\nIt seems the file you've chosen doesn't match the one we were looking for to solve the non-code issue. \n\nRemember, each non-code contribution plays a crucial role in enhancing the project's quality and accessibility. Whether it's documentation, graphics, or organization, every aspect is important.\n\nIf you need help, don't forget that you can type **\"help\"** to get hints to complete this task.\n\nThis task is a bit like detective work 🔍.\n\nSolving a non-code issue by interacting with the right project file demonstrates your ability to contribute to and navigate the project effectively. It's an essential skill in open-source collaboration, showing that you're ready to contribute in a variety of ways.\n\nReady for another try? The correct file and solution to the issue are just a thought process away!\n\nPlease select the correct answer from the options below based on the issue you're addressing:\n\nA) README.md\nB) LICENSE\nC) CONTRIBUTING.md\nD) CHANGELOG.md\n\nType the letter in the comment box to complete this task.",
+          "success": "### 🌟 Congratulations! You've Made Your First Contribution!\n\nBy solving a non-code issue within our project, you've demonstrated your ability to contribute to our community in diverse and meaningful ways. Your effort enhances the project's quality and accessibility, proving that contributions extend far beyond just code.\n\nFor your dedication and successful contribution, you've been awarded **${experiencePoints} experience points!**\n\n>🌟 🌟 🌟\n\n🏆 **Current Progress:** These ${experiencePoints} points boost your total to **${currentPoints} points**, solidifying your status at Level 2. This achievement is a direct reflection of your commitment, learning, and active participation in our project.\n\n🎯 **Quest Completion:** You now have ${completionRate}% completion rate. To successfully complete the entire quest, you need to reach a 100% completion rate. Each contribution brings you closer to this next significant milestone.\n\n> 🌟 🌟 🌟\n\nFantastic work! Your journey through the project vividly illustrates your growth and the impact of your contributions.\n\nAre you ready to tackle the next challenge? More adventures and rewards are on the horizon!\n\nThe adventure continues! 🌟\n\n",
+          "answer": "a",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "Q1",
+      "title": "Q1: Understanding OSS Projects and GitHub Basics",
+      "isQ0": false,
+      "questType": "fixed",
+      "sequenceNumber": 4,
+      "metadata": {
+        "title": "Q1: Understanding OSS Projects and GitHub Basics",
+        "description": "Q1: Understanding OSS Projects and GitHub Basics",
+        "prerequisite": "Q3",
+        "type": "general"
+      },
+      "badgeDescription": "Explorer 🚀",
+      "tasks": {
+        "T1": {
+          "desc": "Explore the issue tracker",
+          "points": 20,
+          "xp": 20,
+          "type": "general",
+          "accept": "### 🎯 Task 1: Find the Issue Tracker\n\n**Objective:** The issue tracker is the hub for project discussions, bug reports, and feature requests. Your goal is to find the issue tracker within our GitHub repository.\n\n**Task:** Visit the GitHub repository in the link below and **COUNT** the number of open issues and provide that number in the comment box to complete the task.\n\n**Outcome:** This task will help you become familiar with how issues are reported, discussed, and tracked. Understanding the volume of discussions is crucial for grasping the project's activity level and areas that might need your contribution.\n\n**Help:** If you need help with this task, type \"help\" in the comment box to get hints, but it will cost you 5 points from your total score.",
+          "error": "### 🚨 Oops, That's Not Quite Right!\n\nIt looks like the number you've provided doesn't match the current count of **OPEN** issues in our project. \n\nNo worries, though! Mistakes are just stepping stones on the path to learning.\n\nIf you need help, don't forget that you can type **\"help\"** to get hints to complete this task.\n\nEach issue represents a story, a problem to solve, or a feature to improve. Finding the correct number is just the start of understanding the broader narrative of our project.\n\nReady for another try? Your correct answer awaits just a click away!",
+          "success": "### 🌟 Congratulations! You Nailed It!\n\nYou've successfully identified the correct number of issues in our project, displaying keen attention to detail and dedication. As a reward for your sharp observation skills, you've earned **${experiencePoints} experience points!**\n\n> 🌟 🌟 🌟\n\n🏆 **Current Progress:** You now have **${currentPoints} points**, edging closer to the next level. Remember, you need a total of **100 points to level up**, meaning you're just **${pointsRemaining} points away** from achieving that milestone.\n\n🎯 **Quest Completion:** You now have ${completionRate}% completion rate, to successfully complete the entire quest, you need to reach an 100% completion rate. Every task you accomplish brings you closer to mastering the GitHub realm and unlocking new levels of collaboration and contribution.\n\n> 🌟 🌟 🌟\n\nKeep up the great work! Your journey through the quest is shaping up to be an exciting one. \n\nReady for the next challenge? More experiences and rewards await!\n\nA new task has appeared in the issues tab.\n\nYour adventure awaits! 🌟\n\n",
+          "answer": "a",
+          "hints": []
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "version": "2.0",
+    "description": "Quest configuration for TEST 102",
+    "lastUpdated": "2025-07-11T19:18:13.462Z",
+    "totalQuests": 5,
+    "customQuests": 1,
+    "fixedQuests": 4
+  }
+}

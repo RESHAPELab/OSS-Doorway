@@ -1,0 +1,140 @@
+{
+  "map_repo_link": "https://github.com/your-org/your-oss-repo",
+  "questSequence": [
+    {
+      "questId": "Module1",
+      "title": "Basic Knowledge Check",
+      "metadata": {
+        "description": "Test your fundamental understanding",
+        "prerequisite": null,
+        "isQ0": false
+      },
+      "badgeDescription": "🎯 **Knowledge Seeker** - You've demonstrated solid foundational knowledge!",
+      "tasks": {
+        "T1": {
+          "desc": "What is the primary purpose of version control systems like Git?",
+          "type": "mcq",
+          "points": 10,
+          "xp": 5,
+          "accept": "**Objective:** Test understanding of version control basics\n\n**Question:** What is the primary purpose of version control systems like Git?\n\n**Options:**\nA) To make code run faster\nB) To track changes and collaborate on code\nC) To automatically fix bugs\nD) To create backups of files\n\n**Help:** Think about what developers need when working together on the same project.",
+          "success": "✅ **Correct!** Version control systems like Git are primarily used to track changes and enable collaboration on code. This allows multiple developers to work on the same project while keeping track of who made what changes and when.",
+          "error": "❌ **Incorrect!** While version control can help with backups and even indirectly with code quality, its primary purpose is to track changes and enable collaboration on code. Try again!",
+          "answer": "B",
+          "detailedHints": [
+            {
+              "sequence": 1,
+              "content": "Think about what happens when multiple people work on the same project. How do they know what changes were made?",
+              "penalty": 2
+            },
+            {
+              "sequence": 2,
+              "content": "The word 'version' in 'version control' should give you a clue about what it tracks.",
+              "penalty": 3
+            },
+            {
+              "sequence": 3,
+              "content": "Git is used by teams to work together on software projects. What would be the main benefit of using it?",
+              "penalty": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "questId": "Module2", 
+      "title": "GitHub Repository Analysis",
+      "metadata": {
+        "description": "Learn to analyze GitHub repositories by counting issues, pull requests, and identifying top contributors",
+        "prerequisite": "Module1",
+        "isQ0": false
+      },
+      "badgeDescription": "🔍 **Repository Analyst** - You've demonstrated the ability to analyze GitHub repositories and understand their activity patterns!",
+      "tasks": {
+        "T1": {
+          "desc": "Count the number of open issues in the specified repository",
+          "type": "issuecount", 
+          "points": 20,
+          "xp": 10,
+          "ossRepository": "microsoft/vscode",
+          "accept": "**Objective:** Analyze GitHub repository activity\n\n**Question:** How many open issues are currently in the Microsoft VS Code repository?\n\n**Task:** Visit the repository and count the total number of open issues (not pull requests).\n\n**Repository:** https://github.com/microsoft/vscode\n\n**Help:** Look for the 'Issues' tab on the repository page. Make sure you're counting issues, not pull requests.",
+          "success": "✅ **Excellent work!** You've successfully counted the open issues in the Microsoft VS Code repository. This skill is essential for understanding project activity and contribution opportunities in open source projects.",
+          "error": "❌ **Not quite right!** Make sure you're counting only open issues (not pull requests) in the Microsoft VS Code repository. Visit the Issues tab and look for the total count of open issues.",
+          "answer": "",
+          "detailedHints": [
+            {
+              "sequence": 1,
+              "content": "Go to https://github.com/microsoft/vscode and look for the 'Issues' tab in the repository navigation.",
+              "penalty": 2
+            },
+            {
+              "sequence": 2,
+              "content": "Make sure you're looking at issues, not pull requests. They are counted separately on GitHub.",
+              "penalty": 3
+            },
+            {
+              "sequence": 3,
+              "content": "The number you need is usually displayed prominently on the Issues page, showing the total count of open issues.",
+              "penalty": 5
+            }
+          ]
+        },
+        "T2": {
+          "desc": "Count the number of open pull requests in the specified repository",
+          "type": "prcount", 
+          "points": 20,
+          "xp": 10,
+          "ossRepository": "microsoft/vscode",
+          "accept": "**Objective:** Analyze GitHub repository contribution activity\n\n**Question:** How many open pull requests are currently in the Microsoft VS Code repository?\n\n**Task:** Visit the repository and count the total number of open pull requests (not issues).\n\n**Repository:** https://github.com/microsoft/vscode\n\n**Help:** Look for the 'Pull requests' tab on the repository page. Make sure you're counting pull requests, not issues.",
+          "success": "✅ **Great job!** You've successfully counted the open pull requests in the Microsoft VS Code repository. Understanding PR activity helps you gauge how active a project is and how many contributions are being reviewed.",
+          "error": "❌ **Not quite right!** Make sure you're counting only open pull requests (not issues) in the Microsoft VS Code repository. Visit the Pull requests tab and look for the total count of open PRs.",
+          "answer": "",
+          "detailedHints": [
+            {
+              "sequence": 1,
+              "content": "Go to https://github.com/microsoft/vscode and look for the 'Pull requests' tab in the repository navigation.",
+              "penalty": 2
+            },
+            {
+              "sequence": 2,
+              "content": "Make sure you're looking at pull requests, not issues. They are counted separately on GitHub.",
+              "penalty": 3
+            },
+            {
+              "sequence": 3,
+              "content": "The number you need is usually displayed prominently on the Pull requests page, showing the total count of open PRs.",
+              "penalty": 5
+            }
+          ]
+        },
+        "T3": {
+          "desc": "Identify the top contributor to the specified repository",
+          "type": "topcontributor", 
+          "points": 20,
+          "xp": 10,
+          "ossRepository": "microsoft/vscode",
+          "accept": "**Objective:** Identify key contributors in open source projects\n\n**Question:** Who is the top contributor to the Microsoft VS Code repository?\n\n**Task:** Visit the repository and identify the person with the most contributions (commits, pull requests, etc.).\n\n**Repository:** https://github.com/microsoft/vscode\n\n**Help:** Look for the 'Contributors' section or tab on the repository page. The top contributor is usually listed first.",
+          "success": "✅ **Excellent detective work!** You've successfully identified the top contributor to the Microsoft VS Code repository. Understanding who the key contributors are helps you know who to reach out to for guidance or collaboration.",
+          "error": "❌ **Not quite right!** Make sure you're looking at the top contributor (person with the most contributions) in the Microsoft VS Code repository. Check the Contributors section or tab.",
+          "answer": "",
+          "detailedHints": [
+            {
+              "sequence": 1,
+              "content": "Go to https://github.com/microsoft/vscode and look for the 'Contributors' section or tab in the repository.",
+              "penalty": 2
+            },
+            {
+              "sequence": 2,
+              "content": "The top contributor is usually listed first in the contributors list, with the highest number of contributions.",
+              "penalty": 3
+            },
+            {
+              "sequence": 3,
+              "content": "Look for the username/handle of the person with the most commits or contributions to the repository.",
+              "penalty": 5
+            }
+          ]
+        }
+      }
+    }
+  ]
+} 

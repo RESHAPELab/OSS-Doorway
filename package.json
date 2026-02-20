@@ -1,8 +1,8 @@
 {
-  "name": "my-first-app",
+  "name": "oss-doorway",
   "version": "1.0.0",
   "private": true,
-  "description": "A Hello world app",
+  "description": "OSS Doorway - GitHub App for Open Source Software Education",
   "author": "Connor Aiton",
   "license": "ISC",
   "homepage": "https://github.com//",
@@ -12,26 +12,33 @@
     "probot-app"
   ],
   "scripts": {
-    "start": "probot run ./index.js",
+    "start": "npx smee -u https://smee.io/lVDFUmXMr2lbe0PD --target http://localhost:3000 & WEBHOOK_PROXY_URL=https://smee.io/lVDFUmXMr2lbe0PD npx probot run ./index.js",
+    "start:prod": "npx probot run ./index.js",
+    "start:smee": "npx smee -u https://smee.io/lVDFUmXMr2lbe0PD --target http://localhost:3000 & npx probot run ./index.js",
     "test": "node --test",
     "repoSetup": "node setup.js"
   },
   "dependencies": {
+    "@octokit/core": "^7.0.3",
     "@octokit/rest": "^21.0.2",
+    "@sentry/node": "^8.55.0",
+    "axios": "^1.7.7",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.5",
+    "express": "^4.18.2",
     "mongodb": "^6.5.0",
     "mongoose": "^8.7.2",
-    "probot": "^13.0.1",
-    "prompt-sync": "^4.2.0"
+    "openai": "^5.21.0",
+    "probot": "^14.0.1",
+    "prompt-sync": "^4.2.0",
+    "smee-client": "^4.3.1"
   },
   "devDependencies": {
     "localtunnel": "^1.8.3",
-    "nock": "^14.0.0-beta.5",
-    "smee-client": "^2.0.0"
+    "nock": "^14.0.0-beta.5"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 20"
   },
   "type": "module"
 }

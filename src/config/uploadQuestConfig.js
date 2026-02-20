@@ -3,6 +3,8 @@ import fs from "fs";
 import dotenv from "dotenv"; // NOTE: assume execution from directory with .env 
 import Quest from "../models/QuestModel.js"; 
 import Task from "../models/TaskModel.js";
+import { getQuestConfig } from "./questConfigGenerator.js";
+import { getCompleteResponseObject } from "./responseGenerator.js";
 
 dotenv.config();
 
@@ -20,8 +22,8 @@ async function connectToDatabase() {
 
 // parse
 async function parseAndUploadData() {
-  const questConfig = JSON.parse(fs.readFileSync("./src/config/quest_config.json", "utf-8"));
-  const responseConfig = JSON.parse(fs.readFileSync("./src/config/response.json", "utf-8"));
+  const questConfig = getQuestConfig();
+  const responseConfig = getCompleteResponseObject();
 
   for (const questKey in questConfig) {
       if (questKey === "oss_repo" || questKey === "map_repo_link") {

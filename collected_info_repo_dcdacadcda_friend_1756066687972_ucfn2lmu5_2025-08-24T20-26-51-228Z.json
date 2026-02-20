@@ -1,0 +1,30 @@
+{
+  "classId": "repo_dcdacadcda_friend_1756066687972_ucfn2lmu5",
+  "timestamp": "2025-08-24T20:26:51.227Z",
+  "totalUsers": 1,
+  "totalCollectedInfoEntries": 1,
+  "usersWithCollectedInfo": 1,
+  "collectedInfoSummary": [
+    {
+      "userId": "dcdacadcda-friend",
+      "github": "dcdacadcda",
+      "username": "dcdacadcda-friend",
+      "collectedInfo": [
+        {
+          "key": "collected_info",
+          "value": "my name is misan"
+        }
+      ]
+    }
+  ],
+  "allUsers": [
+    {
+      "userId": "dcdacadcda-friend",
+      "github": "dcdacadcda",
+      "username": "dcdacadcda-friend",
+      "storedValues": {
+        "collected_info": "my name is misan"
+      }
+    }
+  ]
+}

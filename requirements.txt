@@ -1,0 +1,5 @@
+dspy
+chromadb
+python-dotenv
+openai
+Pillow>=10.0.0

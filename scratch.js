@@ -1,11 +1,11 @@
 import fs from "fs";
 import { taskMapping } from "./taskMapping.js";
+import { getQuestConfig } from "./src/config/questConfigGenerator.js";
+import { getCompleteResponseObject } from "./src/config/responseGenerator.js";
 
 // Constants configuration object
 const CONFIG = {
   paths: {
-    quest: "./src/config/quest_config.json",
-    response: "./src/config/response.json",
     svg: "./src/templates/template.svg",
     defaultReadme: "./src/templates/main.md",
     progressReadme: "./src/templates/progress.md"
@@ -19,8 +19,8 @@ const CONFIG = {
 };
 
 // Load configurations once
-const questResponse = JSON.parse(fs.readFileSync(CONFIG.paths.response, "utf-8"));
-const quests = JSON.parse(fs.readFileSync(CONFIG.paths.quest, "utf8"));
+const questResponse = getCompleteResponseObject();
+const quests = getQuestConfig();
 const ossRepo = process.env.OSS_REPO;
 const mapRepoLink = quests.map_repo_link;
 

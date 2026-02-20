@@ -1,33 +1,66 @@
 // assisting funcitons mostly just abstracting github API for the task mapping file
 
-async function getIssueCount(repo) {
+async function getIssueCount(repo, context) {
     try {
-        const response = await fetch(`https://api.github.com/repos/${repo}/issues`);
-        if (response.ok) {
-            const issues = await response.json();
-            // Filter out pull requests
-            const actualIssues = issues.filter((issue) => !issue.pull_request);
-            return actualIssues.length;
-        } else {
-            console.error("Error:", response.status);
-            return null;
+        // Destructure owner and repo from the repository name (e.g., "owner/repo")
+        const [owner, repoName] = repo.split("/");
+        
+        // Use authenticated API call for consistency and better rate limits
+        // Use the issues endpoint to get all open items (issues + PRs) with pagination
+        let allItems = [];
+        let page = 1;
+        const perPage = 100;
+        let keepFetching = true;
+        
+        while (keepFetching) {
+            const { data: fetchedItems } = await context.octokit.rest.issues.listForRepo({
+                owner,
+                repo: repoName,
+                state: 'open',
+                per_page: perPage,
+                page: page
+            });
+            
+//             console.log(`[getIssueCount] Page ${page}: fetched ${Array.isArray(fetchedItems) ? fetchedItems.length : 0} items`);
+            
+            if (Array.isArray(fetchedItems)) {
+                allItems = allItems.concat(fetchedItems);
+                
+                if (fetchedItems.length < perPage) {
+                    keepFetching = false;
+                } else {
+                    page++;
+                }
+            } else {
+                console.error(`[getIssueCount] Unexpected response format on page ${page}`);
+                keepFetching = false;
+            }
         }
+        
+        // Filter out pull requests (items with pull_request property)
+        const actualIssues = allItems.filter((item) => !item.pull_request);
+        
+//         console.log(`[getIssueCount] Found ${actualIssues.length} open issues in ${repo} (total items: ${allItems.length})`);
+        return actualIssues.length;
     } catch (error) {
-        console.error("Error:", error);
+        console.error(`[getIssueCount] Error getting issue count for ${repo}:`, error);
         return null;
     }
 }
 
 // assignee to github issue
-async function isFirstAssignee(repo, user, selectedIssue) {
+async function isFirstAssignee(repo, user, selectedIssue, context) {
     try {
-        const response = await fetch(
-            `https://api.github.com/repos/${repo}/issues/${selectedIssue}`
-        );
-        if (!response.ok) {
-            throw new Error(`Issue ${selectedIssue} not found in repository ${repo}`);
-        }
-        const issueSelected = await response.json();
+        // Destructure owner and repo from the repository name (e.g., "owner/repo")
+        const [owner, repoName] = repo.split("/");
+        
+        // Use authenticated API call for consistency and better rate limits
+        const { data: issueSelected } = await context.octokit.rest.issues.get({
+            owner,
+            repo: repoName,
+            issue_number: selectedIssue
+        });
+        
         const assignees = issueSelected.assignees.map((assignee) => assignee.login);
 
         if (assignees.length === 0) {
@@ -43,21 +76,68 @@ async function isFirstAssignee(repo, user, selectedIssue) {
     }
 }
 
-async function getPRCount(repo) {
+async function hasNonCodeContributionLabel(repo, selectedIssue, context) {
     try {
-        const response = await fetch(`https://api.github.com/repos/${repo}/pulls`);
-        const data = await response.json();
+        // Destructure owner and repo from the repository name (e.g., "owner/repo")
+        const [owner, repoName] = repo.split("/");
+        
+        // Use authenticated API call for consistency and better rate limits
+        const { data: issueSelected } = await context.octokit.rest.issues.get({
+            owner,
+            repo: repoName,
+            issue_number: selectedIssue
+        });
+        
+        const labels = issueSelected.labels.map((label) => label.name);
 
-        // Check if the response is an array (list of pull requests)
-        if (Array.isArray(data)) {
-            // The length of the array gives the number of pull requests
-            return data.length;
-        } else {
-            throw new Error("Unexpected response format");
-        }
+        return labels.includes("non-code contribution");
     } catch (error) {
-        console.error("Error fetching pull requests:", error);
-        throw error;
+        console.error("Error checking labels: " + error);
+        return false;
+    }
+}
+
+async function getPRCount(repo, context) {
+    try {
+        // Destructure owner and repo from the repository name (e.g., "owner/repo")
+        const [owner, repoName] = repo.split("/");
+        
+        // Use authenticated API call for consistency and better rate limits
+        let allPulls = [];
+        let page = 1;
+        const perPage = 100;
+        let keepFetching = true;
+        
+        while (keepFetching) {
+            const { data: fetchedPulls } = await context.octokit.rest.pulls.list({
+                owner,
+                repo: repoName,
+                state: 'open',
+                per_page: perPage,
+                page: page
+            });
+            
+//             console.log(`[getPRCount] Page ${page}: fetched ${Array.isArray(fetchedPulls) ? fetchedPulls.length : 0} pull requests`);
+            
+            if (Array.isArray(fetchedPulls)) {
+                allPulls = allPulls.concat(fetchedPulls);
+                
+                if (fetchedPulls.length < perPage) {
+                    keepFetching = false;
+                } else {
+                    page++;
+                }
+            } else {
+                console.error(`[getPRCount] Unexpected response format on page ${page}`);
+                keepFetching = false;
+            }
+        }
+        
+//         console.log(`[getPRCount] Found ${allPulls.length} open pull requests in ${repo}`);
+        return allPulls.length;
+    } catch (error) {
+        console.error(`[getPRCount] Error getting PR count for ${repo}:`, error);
+        return null;
     }
 }
 
@@ -203,7 +283,7 @@ async function getTopContributor(ossRepo, context) {
 
     try {
         // Fetch the list of contributors sorted by their contributions
-        const { data: contributors } = await context.octokit.repos.listContributors({
+        const { data: contributors } = await context.octokit.rest.repos.listContributors({
             owner,
             repo,
             per_page: 1,
@@ -357,6 +437,55 @@ async function openIssues(repo, context) {
     }
 }
 
+async function getOpenIssuesCount(repo, context) {
+    try {
+//         console.log(`[getOpenIssuesCount] Getting open issues count for ${repo}`);
+        
+        // Use authenticated API call for consistency and better rate limits
+        const [owner, repoName] = repo.split("/");
+        
+        // Get all open items (issues + PRs) to count them with pagination
+        let allItems = [];
+        let page = 1;
+        const perPage = 100;
+        let keepFetching = true;
+        
+        while (keepFetching) {
+            const { data: fetchedItems } = await context.octokit.rest.issues.listForRepo({
+                owner,
+                repo: repoName,
+                state: "open",
+                per_page: perPage,
+                page: page
+            });
+            
+//             console.log(`[getOpenIssuesCount] Page ${page}: fetched ${Array.isArray(fetchedItems) ? fetchedItems.length : 0} items`);
+            
+            if (Array.isArray(fetchedItems)) {
+                allItems = allItems.concat(fetchedItems);
+                
+                if (fetchedItems.length < perPage) {
+                    keepFetching = false;
+                } else {
+                    page++;
+                }
+            } else {
+                console.error(`[getOpenIssuesCount] Unexpected response format on page ${page}`);
+                keepFetching = false;
+            }
+        }
+        
+        // Filter out pull requests (items with pull_request property)
+        const actualIssues = allItems.filter((item) => !item.pull_request);
+        
+//         console.log(`[getOpenIssuesCount] Found ${actualIssues.length} open issues in ${repo} (total items: ${allItems.length})`);
+        return actualIssues.length;
+    } catch (error) {
+        console.error(`[getOpenIssuesCount] Error getting open issues count for ${repo}:`, error);
+        return null;
+    }
+}
+
 async function issueClosed(repo, issueNum, context) {
     try {
         const installationID = context.payload.installation.id;
@@ -412,23 +541,31 @@ async function checkAssignee(repo, issueNum, user, context) {
         }
     } catch (error) {
         console.error("Error checking assignees:" + error);
+        return false;
     }
 }
 
 function validateAnswers(userAnswerString, correctAnswers) {
-    const match = userAnswerString.match(/\[([A-Z,\s]+)\]/i);
-    var userAnswers = {};
+    // Try multiple patterns to match different input formats
+    let match = userAnswerString.match(/\[([A-Za-z,\s]+)\]/);  // With brackets: [A,B,C]
+    if (!match) {
+        match = userAnswerString.match(/([A-Za-z,\s]+)/);  // Without brackets: A,B,C
+    }
+    
+    var userAnswers = [];
 
     if (match) {
-        userAnswers = match[1].split(',').map(answer => answer.trim().toLowerCase());
+        // Extract the answers part (either from brackets or direct)
+        const answersPart = match[1] || match[0];
+        userAnswers = answersPart.split(',').map(answer => answer.trim().toLowerCase()).filter(a => a.length > 0);
     } else {
-      throw new Error("Invalid input format");
+      throw new Error("Invalid input format. Expected format: [A,B,C,D] or A,B,C,D");
     }
 
     const lowerCaseCorrectAnswers = correctAnswers.map(answer => answer.toLowerCase());
   
     if (userAnswers.length !== lowerCaseCorrectAnswers.length) {
-      throw new Error("Arrays must be of the same length");
+      throw new Error(`Arrays must be of the same length. Expected ${lowerCaseCorrectAnswers.length} answers, got ${userAnswers.length}`);
     }
 
     let correctAnswersNumber = 0
@@ -440,10 +577,51 @@ function validateAnswers(userAnswerString, correctAnswers) {
             correctAnswersNumber += 1;
         }
         
-        return `Question ${index + 1}: ${isCorrect ? "Correct" : "Wrong"}. Answer: ${correctAnswers[index]}. \n`;
+        return `Question ${index + 1}: ${isCorrect ? "**Correct**" : "**Incorrect**"}. ${!isCorrect ? `Correct answer: ${correctAnswers[index]}` : ""} \n`;
     });
     
     return {correctAnswersNumber, feedback};
+}
+
+
+async function getIssueTitle(repo, issueNumber, context) {
+    try {
+        // Destructure owner and repo from the repository name (e.g., "owner/repo")
+        const [owner, repoName] = repo.split("/");
+        
+        // Use authenticated API call for consistency and better rate limits
+        const { data: issue } = await context.octokit.rest.issues.get({
+            owner,
+            repo: repoName,
+            issue_number: issueNumber
+        });
+        
+//         console.log(`[getIssueTitle] Found issue title: "${issue.title}" for issue #${issueNumber} in ${repo}`);
+        return issue.title;
+    } catch (error) {
+        console.error(`[getIssueTitle] Error getting issue title for ${repo}#${issueNumber}:`, error);
+        return null;
+    }
+}
+
+async function checkIssueExists(repo, issueNumber, context) {
+    try {
+        // Destructure owner and repo from the repository name (e.g., "owner/repo")
+        const [owner, repoName] = repo.split("/");
+        
+        // Use authenticated API call to check if issue exists
+        await context.octokit.rest.issues.get({
+            owner,
+            repo: repoName,
+            issue_number: issueNumber
+        });
+        
+//         console.log(`[checkIssueExists] Issue #${issueNumber} exists in ${repo}`);
+        return true;
+    } catch (error) {
+//         console.log(`[checkIssueExists] Issue #${issueNumber} does not exist in ${repo}:`, error.message);
+        return false;
+    }
 }
 
 export const utils = {
@@ -457,8 +635,14 @@ export const utils = {
     userPRAndComment,
     userCommentedInIssue,
     openIssues,
+    getOpenIssuesCount,
     issueClosed,
     checkAssignee,
     getTopContributor,
-    validateAnswers
+    validateAnswers,
+    hasNonCodeContributionLabel,
+    getIssueTitle,
+    checkIssueExists
 };
+
+

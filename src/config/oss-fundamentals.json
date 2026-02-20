@@ -1,0 +1,240 @@
+{
+  "map_repo_link": "https://github.com/microsoft/vscode",
+  "questSequence": [
+    {
+      "questId": "OSS_FOUNDATIONS",
+      "title": "Open Source Foundations",
+      "isQ0": true,
+      "questType": "custom",
+      "sequenceNumber": 0,
+      "metadata": {
+        "title": "Open Source Foundations",
+        "description": "Learn the fundamental concepts of Open Source Software development",
+        "prerequisite": null,
+        "type": "custom"
+      },
+      "badgeDescription": "OSS Pioneer 🌟",
+      "tasks": {
+        "T1": {
+          "desc": "Understanding Open Source Licenses",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** Which of the following is considered a 'copyleft' open source license?\n\nA) MIT License\nB) Apache License 2.0\nC) GNU General Public License (GPL)\nD) BSD License\n\n**Instructions:** Select the license that requires derivative works to also be open source.",
+          "success": "✅ **Correct!**\n\nExcellent! The GNU GPL is indeed a copyleft license, meaning any derivative work must also be released under the same license, ensuring the software remains open source.\n\n**What you learned:** Copyleft licenses are designed to preserve software freedom by requiring modifications to remain open source.\n\n**Points earned:** 100\n\nGreat start! 🎉",
+          "error": "❌ **Incorrect Answer**\n\nThat's not a copyleft license. Copyleft licenses have specific requirements about derivative works.\n\n**Hint:** Think about which license requires that any modifications must also be open source.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "c",
+          "optionA": "MIT License",
+          "optionB": "Apache License 2.0",
+          "optionC": "GNU General Public License (GPL)",
+          "optionD": "BSD License",
+          "hints": []
+        },
+        "T2": {
+          "desc": "Benefits of Open Source Development",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** What is one of the primary benefits of open source software development?\n\nA) Guaranteed commercial success\nB) No security vulnerabilities\nC) Collaborative development and peer review\nD) Automatic documentation generation\n\n**Instructions:** Select the most accurate benefit of open source development.",
+          "success": "✅ **Correct!**\n\nPerfect! Collaborative development and peer review are indeed core benefits of open source, leading to higher quality software through diverse contributions and scrutiny.\n\n**What you learned:** Open source harnesses collective intelligence and transparency to improve software quality.\n\n**Points earned:** 100\n\nWell done! 🌟",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the primary benefit. Think about what makes open source development unique.\n\n**Hint:** Consider how having many eyes on the code affects quality and development process.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "c",
+          "optionA": "Guaranteed commercial success",
+          "optionB": "No security vulnerabilities",
+          "optionC": "Collaborative development and peer review",
+          "optionD": "Automatic documentation generation",
+          "hints": []
+        },
+        "T3": {
+          "desc": "Open Source Business Models",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** Which is a common business model for open source companies?\n\nA) Selling the source code\nB) Offering professional services and support\nC) Keeping all documentation private\nD) Charging for every download\n\n**Instructions:** Select the most viable business model for open source companies.",
+          "success": "✅ **Correct!**\n\nExcellent! Many successful open source companies thrive by offering professional services, support, training, and consulting around their open source products.\n\n**What you learned:** Open source companies often monetize through services rather than software sales.\n\n**Points earned:** 100\n\nGreat understanding! 💼",
+          "error": "❌ **Incorrect Answer**\n\nThat's not a sustainable open source business model. Think about how companies can add value beyond the code itself.\n\n**Hint:** Consider what enterprises need beyond just access to source code.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "Selling the source code",
+          "optionB": "Offering professional services and support",
+          "optionC": "Keeping all documentation private",
+          "optionD": "Charging for every download",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "GITHUB_ANALYSIS",
+      "title": "GitHub Repository Analysis",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 1,
+      "metadata": {
+        "title": "GitHub Repository Analysis",
+        "description": "Analyze popular open source projects on GitHub",
+        "prerequisite": "OSS_FOUNDATIONS",
+        "type": "custom"
+      },
+      "badgeDescription": "GitHub Detective 🔍",
+      "tasks": {
+        "T1": {
+          "desc": "VS Code Issue Count Analysis",
+          "points": 150,
+          "xp": 150,
+          "type": "get-issue-count",
+          "ossRepository": "microsoft/vscode",
+          "accept": "**Objective:** Understand project activity by analyzing issue tracking in VS Code.\n\n**Task:** Go to the repository https://github.com/microsoft/vscode and count the number of open issues. Reply with the number.\n\n**Help:** Look for the 'Issues' tab on the repository page. This will help you understand the scale of community engagement and ongoing development.",
+          "success": "✅ **Excellent Analysis!**\n\nGreat job! You've successfully analyzed the VS Code repository. VS Code is one of the most active open source projects with thousands of contributors.\n\n**What you learned:** Popular OSS projects often have hundreds or thousands of open issues, indicating active community engagement.\n\n**Points earned:** 150\n\nOutstanding research skills! 🔍",
+          "error": "❌ **Incorrect Count**\n\nThat's not the right number of open issues. Please check the VS Code repository again.\n\n**Hint:** Make sure you're looking at the 'Issues' tab, not 'Pull requests'. The number should be clearly visible.\n\nYou can type \"help\" for additional hints.",
+          "answer": "",
+          "hints": []
+        },
+        "T2": {
+          "desc": "React Repository Analysis",
+          "points": 150,
+          "xp": 150,
+          "type": "get-pr-count",
+          "ossRepository": "facebook/react",
+          "accept": "**Objective:** Analyze contribution activity in the React project.\n\n**Task:** Go to the repository https://github.com/facebook/react and count the number of open pull requests. Reply with the number.\n\n**Help:** Look for the 'Pull requests' tab. This indicates how many people are actively contributing code changes.",
+          "success": "✅ **Great Analysis!**\n\nExcellent work! You've analyzed the React repository's contribution activity. React is a cornerstone of modern web development.\n\n**What you learned:** Pull request counts indicate active development and community contributions to a project.\n\n**Points earned:** 150\n\nFantastic detective work! 🕵️",
+          "error": "❌ **Incorrect Count**\n\nThat's not the right number of open pull requests. Please check the React repository again.\n\n**Hint:** Look for the 'Pull requests' tab, not 'Issues'. Count only the open ones.\n\nYou can type \"help\" for additional hints.",
+          "answer": "",
+          "hints": []
+        },
+        "T3": {
+          "desc": "Repository Stars and Popularity",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** What do 'stars' on a GitHub repository typically indicate?\n\nA) Number of bugs in the code\nB) Community interest and popularity\nC) Number of paid developers\nD) Code complexity level\n\n**Instructions:** Select what GitHub stars represent in the open source community.",
+          "success": "✅ **Correct!**\n\nPerfect! Stars on GitHub are indeed a measure of community interest and popularity, similar to bookmarks or likes on other platforms.\n\n**What you learned:** Stars help gauge community adoption and interest in open source projects.\n\n**Points earned:** 100\n\nGreat understanding of GitHub metrics! ⭐",
+          "error": "❌ **Incorrect Answer**\n\nThat's not what stars represent. Think about social media engagement patterns.\n\n**Hint:** Stars are similar to 'likes' or 'favorites' on other platforms.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "Number of bugs in the code",
+          "optionB": "Community interest and popularity",
+          "optionC": "Number of paid developers",
+          "optionD": "Code complexity level",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "CONTRIBUTION_WORKFLOW",
+      "title": "Contributing to Open Source",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 2,
+      "metadata": {
+        "title": "Contributing to Open Source",
+        "description": "Learn the workflow and best practices for contributing to OSS projects",
+        "prerequisite": "GITHUB_ANALYSIS",
+        "type": "custom"
+      },
+      "badgeDescription": "OSS Contributor 🚀",
+      "tasks": {
+        "T1": {
+          "desc": "Fork and Pull Request Workflow",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** What is the typical workflow for contributing to an open source project?\n\nA) Clone → Edit → Push directly to main branch\nB) Fork → Clone → Branch → Edit → Pull Request\nC) Download ZIP → Edit → Email changes\nD) Edit directly on GitHub website\n\n**Instructions:** Select the standard contribution workflow for open source projects.",
+          "success": "✅ **Correct!**\n\nExcellent! The Fork → Clone → Branch → Edit → Pull Request workflow is indeed the standard practice for contributing to open source projects.\n\n**What you learned:** This workflow ensures code review and prevents direct changes to the main codebase.\n\n**Points earned:** 100\n\nGreat knowledge of OSS workflows! 🔄",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the standard workflow. Think about the safest way to propose changes without affecting the main project.\n\n**Hint:** The workflow should include a way to propose changes for review before they're merged.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "Clone → Edit → Push directly to main branch",
+          "optionB": "Fork → Clone → Branch → Edit → Pull Request",
+          "optionC": "Download ZIP → Edit → Email changes",
+          "optionD": "Edit directly on GitHub website",
+          "hints": []
+        },
+        "T2": {
+          "desc": "Code Review Best Practices",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** What is the primary purpose of code review in open source projects?\n\nA) To reject as many contributions as possible\nB) To ensure code quality and share knowledge\nC) To slow down development\nD) To show superiority over contributors\n\n**Instructions:** Select the main benefit of code review in OSS development.",
+          "success": "✅ **Correct!**\n\nPerfect! Code review is indeed primarily about ensuring code quality, sharing knowledge, and maintaining project standards.\n\n**What you learned:** Code review is a collaborative process that improves both code and developer skills.\n\n**Points earned:** 100\n\nExcellent understanding! 👥",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the purpose of code review. Think about constructive collaboration.\n\n**Hint:** Code review should be a positive, educational process that benefits everyone.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "To reject as many contributions as possible",
+          "optionB": "To ensure code quality and share knowledge",
+          "optionC": "To slow down development",
+          "optionD": "To show superiority over contributors",
+          "hints": []
+        },
+        "T3": {
+          "desc": "Issue and Bug Reporting",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** What should you include when reporting a bug in an open source project?\n\nA) Just the error message\nB) Steps to reproduce, environment details, and expected vs actual behavior\nC) Only your opinion about the bug\nD) A complaint about the developers\n\n**Instructions:** Select what makes a good bug report.",
+          "success": "✅ **Correct!**\n\nExcellent! A comprehensive bug report with reproduction steps, environment details, and clear description helps developers fix issues efficiently.\n\n**What you learned:** Good bug reports are essential for effective open source collaboration.\n\n**Points earned:** 100\n\nGreat communication skills! 🐛",
+          "error": "❌ **Incorrect Answer**\n\nThat won't help developers fix the issue. Think about what information would be most helpful.\n\n**Hint:** Developers need enough information to understand and reproduce the problem.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "Just the error message",
+          "optionB": "Steps to reproduce, environment details, and expected vs actual behavior",
+          "optionC": "Only your opinion about the bug",
+          "optionD": "A complaint about the developers",
+          "hints": []
+        }
+      }
+    },
+    {
+      "questId": "OSS_ECOSYSTEM",
+      "title": "Open Source Ecosystem",
+      "isQ0": false,
+      "questType": "custom",
+      "sequenceNumber": 3,
+      "metadata": {
+        "title": "Open Source Ecosystem",
+        "description": "Explore the broader open source ecosystem and its impact",
+        "prerequisite": "CONTRIBUTION_WORKFLOW",
+        "type": "custom"
+      },
+      "badgeDescription": "Ecosystem Expert 🌍",
+      "tasks": {
+        "T1": {
+          "desc": "Linux Kernel Analysis",
+          "points": 200,
+          "xp": 200,
+          "type": "get-issue-count",
+          "ossRepository": "torvalds/linux",
+          "accept": "**Objective:** Analyze one of the most important open source projects - the Linux kernel.\n\n**Task:** Go to the repository https://github.com/torvalds/linux and count the number of open issues. Reply with the number.\n\n**Help:** The Linux kernel is the foundation of many operating systems. Understanding its development process is crucial for OSS understanding.",
+          "success": "✅ **Outstanding Analysis!**\n\nIncredible work! You've analyzed the Linux kernel repository - one of the most significant open source projects in history.\n\n**What you learned:** The Linux kernel demonstrates how massive, critical software can be successfully developed through open source collaboration.\n\n**Points earned:** 200\n\nYou're becoming an OSS expert! 🐧",
+          "error": "❌ **Incorrect Count**\n\nThat's not the right number. The Linux kernel repository might have different issue tracking patterns.\n\n**Hint:** Some major projects use external issue trackers, so the GitHub issues might be limited.\n\nYou can type \"help\" for additional hints.",
+          "answer": "",
+          "hints": []
+        },
+        "T2": {
+          "desc": "Package Managers and Dependencies",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** What is the primary role of package managers in the open source ecosystem?\n\nA) To compile source code\nB) To manage dependencies and distribute software\nC) To write documentation\nD) To review code quality\n\n**Instructions:** Select the main function of package managers like npm, pip, or cargo.",
+          "success": "✅ **Correct!**\n\nPerfect! Package managers are indeed crucial for managing dependencies and distributing open source software efficiently.\n\n**What you learned:** Package managers enable the complex ecosystem of interdependent open source libraries and tools.\n\n**Points earned:** 100\n\nGreat ecosystem understanding! 📦",
+          "error": "❌ **Incorrect Answer**\n\nThat's not the primary role of package managers. Think about how developers use them daily.\n\n**Hint:** Consider what npm, pip, or apt-get actually do when you use them.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "To compile source code",
+          "optionB": "To manage dependencies and distribute software",
+          "optionC": "To write documentation",
+          "optionD": "To review code quality",
+          "hints": []
+        },
+        "T3": {
+          "desc": "Open Source Security",
+          "points": 100,
+          "xp": 100,
+          "type": "multiple-choice",
+          "accept": "**Question:** How does open source software approach security compared to proprietary software?\n\nA) Open source is always less secure\nB) Security through obscurity vs security through transparency\nC) Open source ignores security entirely\nD) Proprietary software has no security issues\n\n**Instructions:** Select the key difference in security approaches.",
+          "success": "✅ **Correct!**\n\nExcellent! Open source follows 'security through transparency' where many eyes can review and improve security, versus 'security through obscurity'.\n\n**What you learned:** Open source security benefits from peer review and transparency, following Linus's Law: 'given enough eyeballs, all bugs are shallow'.\n\n**Points earned:** 100\n\nOutstanding security awareness! 🔒",
+          "error": "❌ **Incorrect Answer**\n\nThat's not accurate. Think about the fundamental philosophical differences in security approaches.\n\n**Hint:** Consider how visibility of source code affects security analysis and improvement.\n\nYou can type \"help\" for additional guidance.",
+          "answer": "b",
+          "optionA": "Open source is always less secure",
+          "optionB": "Security through obscurity vs security through transparency",
+          "optionC": "Open source ignores security entirely",
+          "optionD": "Proprietary software has no security issues",
+          "hints": []
+        }
+      }
+    }
+  ]
+} 
